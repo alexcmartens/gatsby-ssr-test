@@ -35,9 +35,8 @@ export const getComposition = async () => {
     process.env.GATSBY_UNIFORM_PROJECT_ID
   );
   const client = new CanvasClient({
-    apiKey:
-      "uf1374j4gy08uptxkldjrkn7ecl54y2nkncgah5c4wsmqa967xccp34w23nh4lkcfssytdee9amdj3gw2sh6uv6qxsg6lcpyz",
-    projectId: "2e8a0bb6-514e-447c-b9ba-486e8cb9ffc1",
+    apiKey: process.env.GATSBY_UNIFORM_API_KEY,
+    projectId: process.env.GATSBY_UNIFORM_PROJECT_ID,
   });
   const { composition } = await client.getCompositionBySlug({
     slug: "uniform-home-page",
@@ -82,9 +81,11 @@ const parameterEnhancer = ({ component, parameter, parameterName }) => {
 
 // Sanity enhancer function
 export async function enhanceComposition(composition) {
+  console.log('GATSBY_CONTENTFUL_BRANCH', process.env.GATSBY_CONTENTFUL_BRANCH)
   const client = createClient({
-    space: "citn2sn5tdjr",
-    accessToken: "UI_9usOR-U7-g4Z42ivbieDpvjGMVoPVBogZ0CEMK3A",
+    space: process.env.GATSBY_CONTENTFUL_SPACE_ID,
+    accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
+    environment: process.env.GATSBY_CONTENTFUL_BRANCH
   })
   
   // client
