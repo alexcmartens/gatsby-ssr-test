@@ -15,17 +15,26 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@uniformdev/canvas": "^17.7.0",
+    "@uniformdev/canvas-contentful": "^17.7.0",
+    "@uniformdev/canvas-react": "^17.7.0",
+    "@uniformdev/cli": "^17.7.0",
+    "@uniformdev/context": "^17.7.0",
+    "@uniformdev/context-react": "^17.7.0",
     "autoprefixer": "^10.4.14",
     "gatsby": "^5.10.0",
     "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-postcss": "^6.10.0",
+    "gatsby-plugin-sass": "^6.10.0",
     "gatsby-plugin-sharp": "^5.10.0",
     "gatsby-source-contentful": "^8.10.0",
     "gatsby-transformer-sharp": "^5.10.0",
     "postcss": "^8.4.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.3.2"
+    "sass": "^1.62.1",
+    "tailwindcss": "^3.3.2",
+    "terra-one": "^3.0.236"
   },
   "devDependencies": {
     "gatsby-plugin-netlify": "^5.1.0"

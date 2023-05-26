@@ -1,0 +1,68 @@
+{
+  "project": {
+    "pz": {
+      "sig": {
+        "emailCampaign": {
+          "str": 100,
+          "cap": 100,
+          "dur": "s",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "email"
+                },
+                "queryName": "utm_campaign"
+              }
+            ]
+          }
+        },
+        "france": {
+          "str": 100,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "ntl-country-code",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "FR"
+                }
+              }
+            ]
+          }
+        },
+        "pageview": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "|",
+            "type": "G",
+            "clauses": [
+              {
+                "path": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "/en/uniform-home-page"
+                },
+                "type": "PV"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "test": {}
+  }
+}
