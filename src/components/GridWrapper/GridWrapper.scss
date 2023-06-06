@@ -1,0 +1,91 @@
+// @use "~terra-one/dist/global-styles/global-terra.scss";
+@use "~terra-one/dist/global-styles/global-vars.scss" as vars;
+
+.default-layout.nested {
+  @media screen and (min-width: vars.$breakpoint-sm) {
+    &:first-child {
+      .default-layout__grid {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .default-layout__grid {
+    padding-bottom: 0;
+  }
+}
+
+.default-layout {
+  width: 100%;
+  // additional "padding" only for screens 1280px and larger
+  padding: 0px calc((100% - 1280px) / 2);
+
+  // padding none at 1280px so padding can be the 1st and last grid column and nothing additional
+  @media screen and (max-width: vars.$breakpoint-sm) {
+    padding: 0;
+  }
+  &--no-vertical-margin {
+    margin: 0 !important;
+    &
+      + .default-layout:not(.default-layout--no-vertical-margin)
+      .ter-icon-mini-blocks {
+      margin-top: 54px;
+    }
+  }
+  &__grid {
+    margin: 54px 0;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+
+    @media screen and (max-width: vars.$breakpoint-sm) {
+      padding: vars.spacing("lg") 0;
+    }
+
+    @media screen and (max-width: vars.$breakpoint-xs) {
+      padding: vars.spacing("sm") 0;
+    }
+
+    @media screen and (max-width: vars.$breakpoint-xxs) {
+      padding: vars.spacing("xs") 0;
+    }
+    &--no-margin {
+      margin: 0;
+    }
+  }
+  &__children {
+    // leaves first and last column as "padding"
+    grid-column: 2 / span 14 !important;
+
+    &.space-top-bottom {
+      margin: 54px 0;
+
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        padding: vars.spacing("lg") 0;
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xs) {
+        padding: vars.spacing("sm") 0;
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xxs) {
+        padding: vars.spacing("xs") 0;
+      }
+    }
+  }
+  @media screen and (max-width: vars.$breakpoint-sm) {
+    &.superhero .luna-super-hero {
+      & > *:last-child,
+      & > .luna-super-hero__content-wrapper > *:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    &.blocklistitems > .default-layout__grid {
+      margin-bottom: 0;
+    }
+    &.twobytwo {
+      & > .default-layout__grid {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

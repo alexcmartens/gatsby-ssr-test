@@ -1,0 +1,378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderProductsPackage renders correctly 1`] = `
+<div
+  content={
+    Object {
+      "cards": Array [
+        Object {
+          "Link": [MockFunction],
+          "bgColor": undefined,
+          "cardLink": Object {
+            "Link": [MockFunction],
+            "iconImage": undefined,
+            "override": null,
+            "setOverride": null,
+            "text": "About",
+            "url": "/en/our-company/about/overview",
+            "video": null,
+          },
+          "eyebrow": "Eyebrow Option",
+          "header": "Product Name",
+          "image": Object {
+            "alt": "Product Name",
+            "focalPointImage": Object {
+              "disableImageCompression": undefined,
+              "height": 180,
+              "title": "industries-natural-resources-quarry-workers-272x180.jpg",
+              "url": "//images.ctfassets.net/citn2sn5tdjr/3pReviqGaCe5T9cNC86TBF/219b6bf9914f09c66343bbb692f54f8e/industries-natural-resources-quarry-workers-272x180.jpg",
+              "width": 272,
+              "x": undefined,
+              "y": undefined,
+            },
+            "wrapperHeight": undefined,
+          },
+          "modalContent": null,
+          "modalType": null,
+          "text": Object {
+            "data": <RichTextConnector
+              data={
+                Object {
+                  "__typename": "ContentfulRichTextContent",
+                  "colorScheme": null,
+                  "content": Object {
+                    "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"Lacus nibh mauris sit sodales pharetra viverra vitae cras aliquet. Turpis sed magna tristique.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                    "references": Array [],
+                  },
+                }
+              }
+            />,
+            "typename": "ContentfulRichTextContent",
+          },
+        },
+        Object {
+          "Link": [MockFunction],
+          "bgColor": undefined,
+          "cardLink": Object {
+            "Link": [MockFunction],
+            "iconImage": undefined,
+            "override": null,
+            "setOverride": null,
+            "text": "External Link ",
+            "url": "https://trimble.com",
+            "video": null,
+          },
+          "eyebrow": "Product Eyebrow",
+          "header": "Header here",
+          "image": Object {
+            "alt": "Header here",
+            "focalPointImage": Object {
+              "disableImageCompression": undefined,
+              "height": 180,
+              "title": "industries-natural-resources-quarry-workers-272x180.jpg",
+              "url": "//images.ctfassets.net/citn2sn5tdjr/3pReviqGaCe5T9cNC86TBF/219b6bf9914f09c66343bbb692f54f8e/industries-natural-resources-quarry-workers-272x180.jpg",
+              "width": 272,
+              "x": undefined,
+              "y": undefined,
+            },
+            "wrapperHeight": undefined,
+          },
+          "modalContent": null,
+          "modalType": null,
+          "text": "Lacus nibh mauris sit sodales pharetra viverra vitae cras aliquet. Turpis sed magna tristique.",
+        },
+        Object {
+          "Link": [MockFunction],
+          "bgColor": undefined,
+          "cardLink": Object {
+            "Link": [MockFunction],
+            "iconImage": undefined,
+            "override": null,
+            "setOverride": null,
+            "text": "External Link ",
+            "url": "https://trimble.com",
+            "video": null,
+          },
+          "eyebrow": "Product Eyebrow",
+          "header": "Header here",
+          "image": Object {
+            "alt": "Header here",
+            "focalPointImage": Object {
+              "disableImageCompression": undefined,
+              "height": 180,
+              "title": "industries-natural-resources-quarry-workers-272x180.jpg",
+              "url": "//images.ctfassets.net/citn2sn5tdjr/3pReviqGaCe5T9cNC86TBF/219b6bf9914f09c66343bbb692f54f8e/industries-natural-resources-quarry-workers-272x180.jpg",
+              "width": 272,
+              "x": undefined,
+              "y": undefined,
+            },
+            "wrapperHeight": undefined,
+          },
+          "modalContent": null,
+          "modalType": null,
+          "text": "Lacus nibh mauris sit sodales pharetra viverra vitae cras aliquet. Turpis sed magna tristique.",
+        },
+        Object {
+          "Link": [MockFunction],
+          "bgColor": undefined,
+          "cardLink": Object {
+            "Link": [MockFunction],
+            "iconImage": undefined,
+            "override": null,
+            "setOverride": null,
+            "text": "External Link ",
+            "url": "https://trimble.com",
+            "video": null,
+          },
+          "eyebrow": "Product Eyebrow",
+          "header": "Header here",
+          "image": Object {
+            "alt": "Header here",
+            "focalPointImage": Object {
+              "disableImageCompression": undefined,
+              "height": 180,
+              "title": "industries-natural-resources-quarry-workers-272x180.jpg",
+              "url": "//images.ctfassets.net/citn2sn5tdjr/3pReviqGaCe5T9cNC86TBF/219b6bf9914f09c66343bbb692f54f8e/industries-natural-resources-quarry-workers-272x180.jpg",
+              "width": 272,
+              "x": undefined,
+              "y": undefined,
+            },
+            "wrapperHeight": undefined,
+          },
+          "modalContent": null,
+          "modalType": null,
+          "text": "Lacus nibh mauris sit sodales pharetra viverra vitae cras aliquet. Turpis sed magna tristique.",
+        },
+        Object {
+          "Link": [MockFunction],
+          "bgColor": undefined,
+          "cardLink": Object {
+            "Link": [MockFunction],
+            "iconImage": undefined,
+            "override": null,
+            "setOverride": null,
+            "text": "About",
+            "url": "/en/our-company/about/overview",
+            "video": null,
+          },
+          "eyebrow": "Eyebrow Option",
+          "header": "Product Name",
+          "image": Object {
+            "alt": "Product Name",
+            "focalPointImage": Object {
+              "disableImageCompression": undefined,
+              "height": 180,
+              "title": "industries-natural-resources-quarry-workers-272x180.jpg",
+              "url": "//images.ctfassets.net/citn2sn5tdjr/3pReviqGaCe5T9cNC86TBF/219b6bf9914f09c66343bbb692f54f8e/industries-natural-resources-quarry-workers-272x180.jpg",
+              "width": 272,
+              "x": undefined,
+              "y": undefined,
+            },
+            "wrapperHeight": undefined,
+          },
+          "modalContent": null,
+          "modalType": null,
+          "text": Object {
+            "data": <RichTextConnector
+              data={
+                Object {
+                  "__typename": "ContentfulRichTextContent",
+                  "colorScheme": null,
+                  "content": Object {
+                    "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"Lacus nibh mauris sit sodales pharetra viverra vitae cras aliquet. Turpis sed magna tristique.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                    "references": Array [],
+                  },
+                }
+              }
+            />,
+            "typename": "ContentfulRichTextContent",
+          },
+        },
+        Object {
+          "Link": [MockFunction],
+          "bgColor": undefined,
+          "cardLink": Object {
+            "Link": [MockFunction],
+            "iconImage": undefined,
+            "override": null,
+            "setOverride": null,
+            "text": "About",
+            "url": "/en/our-company/about/overview",
+            "video": null,
+          },
+          "eyebrow": "Eyebrow Option",
+          "header": "Product Name",
+          "image": Object {
+            "alt": "Product Name",
+            "focalPointImage": Object {
+              "disableImageCompression": undefined,
+              "height": 180,
+              "title": "industries-natural-resources-quarry-workers-272x180.jpg",
+              "url": "//images.ctfassets.net/citn2sn5tdjr/3pReviqGaCe5T9cNC86TBF/219b6bf9914f09c66343bbb692f54f8e/industries-natural-resources-quarry-workers-272x180.jpg",
+              "width": 272,
+              "x": undefined,
+              "y": undefined,
+            },
+            "wrapperHeight": undefined,
+          },
+          "modalContent": null,
+          "modalType": null,
+          "text": Object {
+            "data": <RichTextConnector
+              data={
+                Object {
+                  "__typename": "ContentfulRichTextContent",
+                  "colorScheme": null,
+                  "content": Object {
+                    "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"Lacus nibh mauris sit sodales pharetra viverra vitae cras aliquet. Turpis sed magna tristique.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                    "references": Array [],
+                  },
+                }
+              }
+            />,
+            "typename": "ContentfulRichTextContent",
+          },
+        },
+        Object {
+          "Link": [MockFunction],
+          "bgColor": undefined,
+          "cardLink": Object {
+            "Link": [MockFunction],
+            "iconImage": undefined,
+            "override": null,
+            "setOverride": null,
+            "text": "External Link ",
+            "url": "https://trimble.com",
+            "video": null,
+          },
+          "eyebrow": "Product Eyebrow",
+          "header": "Header here",
+          "image": Object {
+            "alt": "Header here",
+            "focalPointImage": Object {
+              "disableImageCompression": undefined,
+              "height": 180,
+              "title": "industries-natural-resources-quarry-workers-272x180.jpg",
+              "url": "//images.ctfassets.net/citn2sn5tdjr/3pReviqGaCe5T9cNC86TBF/219b6bf9914f09c66343bbb692f54f8e/industries-natural-resources-quarry-workers-272x180.jpg",
+              "width": 272,
+              "x": undefined,
+              "y": undefined,
+            },
+            "wrapperHeight": undefined,
+          },
+          "modalContent": null,
+          "modalType": null,
+          "text": "Lacus nibh mauris sit sodales pharetra viverra vitae cras aliquet. Turpis sed magna tristique.",
+        },
+        Object {
+          "Link": [MockFunction],
+          "bgColor": undefined,
+          "cardLink": Object {
+            "Link": [MockFunction],
+            "iconImage": undefined,
+            "override": null,
+            "setOverride": null,
+            "text": "About",
+            "url": "/en/our-company/about/overview",
+            "video": null,
+          },
+          "eyebrow": "Eyebrow Option",
+          "header": "Product Name",
+          "image": Object {
+            "alt": "Product Name",
+            "focalPointImage": Object {
+              "disableImageCompression": undefined,
+              "height": 180,
+              "title": "industries-natural-resources-quarry-workers-272x180.jpg",
+              "url": "//images.ctfassets.net/citn2sn5tdjr/3pReviqGaCe5T9cNC86TBF/219b6bf9914f09c66343bbb692f54f8e/industries-natural-resources-quarry-workers-272x180.jpg",
+              "width": 272,
+              "x": undefined,
+              "y": undefined,
+            },
+            "wrapperHeight": undefined,
+          },
+          "modalContent": null,
+          "modalType": null,
+          "text": Object {
+            "data": <RichTextConnector
+              data={
+                Object {
+                  "__typename": "ContentfulRichTextContent",
+                  "colorScheme": null,
+                  "content": Object {
+                    "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"Lacus nibh mauris sit sodales pharetra viverra vitae cras aliquet. Turpis sed magna tristique.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                    "references": Array [],
+                  },
+                }
+              }
+            />,
+            "typename": "ContentfulRichTextContent",
+          },
+        },
+        Object {
+          "Link": [MockFunction],
+          "bgColor": undefined,
+          "cardLink": Object {
+            "Link": [MockFunction],
+            "iconImage": undefined,
+            "override": null,
+            "setOverride": null,
+            "text": "About",
+            "url": "/en/our-company/about/overview",
+            "video": null,
+          },
+          "eyebrow": "Eyebrow Option",
+          "header": "Product Name",
+          "image": Object {
+            "alt": "Product Name",
+            "focalPointImage": Object {
+              "disableImageCompression": undefined,
+              "height": 180,
+              "title": "industries-natural-resources-quarry-workers-272x180.jpg",
+              "url": "//images.ctfassets.net/citn2sn5tdjr/3pReviqGaCe5T9cNC86TBF/219b6bf9914f09c66343bbb692f54f8e/industries-natural-resources-quarry-workers-272x180.jpg",
+              "width": 272,
+              "x": undefined,
+              "y": undefined,
+            },
+            "wrapperHeight": undefined,
+          },
+          "modalContent": null,
+          "modalType": null,
+          "text": Object {
+            "data": <RichTextConnector
+              data={
+                Object {
+                  "__typename": "ContentfulRichTextContent",
+                  "colorScheme": null,
+                  "content": Object {
+                    "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"Lacus nibh mauris sit sodales pharetra viverra vitae cras aliquet. Turpis sed magna tristique.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                    "references": Array [],
+                  },
+                }
+              }
+            />,
+            "typename": "ContentfulRichTextContent",
+          },
+        },
+      ],
+      "cta": Object {
+        "Link": [MockFunction],
+        "iconImage": undefined,
+        "override": null,
+        "setOverride": null,
+        "text": "External Link ",
+        "url": "https://trimble.com",
+        "video": null,
+      },
+      "eyebrow": "Many Products",
+      "header": "Many Products",
+      "image": Object {
+        "alt": "product test image",
+        "url": "//images.ctfassets.net/citn2sn5tdjr/36pRZr0RXiZV9uB9A2fDsM/afdd0af113de5cc0e56168ce428b829f/product.svg",
+      },
+      "productEyebrow": "Works with..... ",
+      "text": "Anim aliquip aliqua aliqua id qui aute anim reprehen derit tempor velit est sint. Anim aliquip aliqua aliqua id qui aute anim reprehen.",
+    }
+  }
+/>
+`;

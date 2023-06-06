@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderHTMLEmbed renders correctly 1`] = `
+<section
+  className="default-layout   mockconstructor
+      "
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "marginBottom": "",
+    }
+  }
+>
+  <section
+    className="default-layout__grid 
+          
+        "
+    style={
+      Object {
+        "backgroundColor": "",
+        "marginBottom": "",
+      }
+    }
+  >
+    <div
+      className="default-layout__children "
+    >
+      <div
+        content={
+          Object {
+            "HTML": undefined,
+            "header": undefined,
+            "ratio": undefined,
+            "subheader": undefined,
+          }
+        }
+      />
+    </div>
+  </section>
+</section>
+`;

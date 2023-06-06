@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderNonTimeBasedListEntries renders correctly 1`] = `
+<section
+  className="default-layout   mockconstructor
+      "
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "marginBottom": "",
+    }
+  }
+>
+  <section
+    className="default-layout__grid 
+          
+        "
+    style={
+      Object {
+        "backgroundColor": "",
+        "marginBottom": "",
+      }
+    }
+  >
+    <div
+      className="default-layout__children "
+    >
+      <div
+        entries={
+          Array [
+            Object {
+              "customAriaLabel": "Test Link Description",
+              "eyebrow": "Test Eyebrow",
+              "groupingCategory": "Test Industry",
+              "header": "Test Generic List Entry 1",
+              "image": null,
+              "industryCategory": "Test Category",
+              "link": Object {
+                "Link": [MockFunction],
+                "iconImage": undefined,
+                "override": null,
+                "setOverride": null,
+                "text": "123",
+                "url": "/en/undefined",
+                "video": null,
+              },
+              "role": "Job Title",
+              "subhead": "Test Subhead",
+              "summary": "<p>This is a short summary</p>",
+            },
+            Object {
+              "customAriaLabel": "Test Link Description",
+              "eyebrow": "Test Eyebrow",
+              "groupingCategory": "Test Category",
+              "header": "Test Generic List Entry 2",
+              "image": null,
+              "industryCategory": "Test Industry",
+              "link": Object {
+                "Link": [MockFunction],
+                "iconImage": undefined,
+                "override": null,
+                "setOverride": null,
+                "text": "123",
+                "url": "/en/undefined",
+                "video": null,
+              },
+              "role": "Job Title",
+              "subhead": "Test Subhead",
+              "summary": "<p>Test Short summary</p>",
+            },
+          ]
+        }
+        groupEntries={null}
+        paddingClass="test-padding-class"
+        sidebarImage={null}
+        variant="long-description"
+      />
+    </div>
+  </section>
+</section>
+`;

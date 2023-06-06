@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderListEntries renders correctly 1`] = `
+<section
+  className="default-layout   mockconstructor
+      "
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "marginBottom": "",
+    }
+  }
+>
+  <section
+    className="default-layout__grid 
+          
+        "
+    style={
+      Object {
+        "backgroundColor": "",
+        "marginBottom": "",
+      }
+    }
+  >
+    <div
+      className="default-layout__children "
+    >
+      <div
+        groups={
+          Array [
+            Object {
+              "entries": Array [
+                Object {
+                  "category": "Test Category",
+                  "date": Object {
+                    "day": "09",
+                    "month": "November",
+                    "raw": "2021-11-10T00:00-05:00",
+                    "year": "2021",
+                  },
+                  "description": "This is a short summary",
+                  "endDate": undefined,
+                  "formats": Array [
+                    Object {
+                      "description": "Test PDF",
+                      "type": "pdf",
+                      "url": "//assets.ctfassets.net/citn2sn5tdjr/6OM4L0ZwSIPIDSSzU6nYut/2396e31452b98bbdecb9ab797a9fe2a5/SamplePDF.pdf",
+                    },
+                    Object {
+                      "description": "Test Doc",
+                      "type": "CDFV2",
+                      "url": "//assets.ctfassets.net/citn2sn5tdjr/6rs2wakXBpA3upPDU99eMX/81eecd33ceae9d86b3b4b06277dc9b9f/original.doc",
+                    },
+                  ],
+                  "image": Object {
+                    "alt": undefined,
+                    "focalPointImage": Object {
+                      "disableImageCompression": undefined,
+                      "height": undefined,
+                      "title": undefined,
+                      "url": "//images.ctfassets.net/citn2sn5tdjr/7zF5J9FlzLzm2SFrT6inNJ/2fe28905a10bd27e8d6b178d3a8239e6/save.png",
+                      "width": undefined,
+                      "x": undefined,
+                      "y": undefined,
+                    },
+                    "wrapperHeight": undefined,
+                  },
+                  "title": "Test Article 2",
+                  "url": "/en/articles/test-article-2",
+                },
+              ],
+              "key": "November-2021",
+              "title": "November 2021",
+            },
+            Object {
+              "entries": Array [
+                Object {
+                  "category": "Test Category",
+                  "date": Object {
+                    "day": "29",
+                    "month": "October",
+                    "raw": "2021-10-29T00:00-05:00",
+                    "year": "2021",
+                  },
+                  "description": "This is a short summary",
+                  "endDate": undefined,
+                  "formats": Array [
+                    Object {
+                      "description": "Test PDF",
+                      "type": "pdf",
+                      "url": "//assets.ctfassets.net/citn2sn5tdjr/6OM4L0ZwSIPIDSSzU6nYut/2396e31452b98bbdecb9ab797a9fe2a5/SamplePDF.pdf",
+                    },
+                    Object {
+                      "description": "Test Doc",
+                      "type": "CDFV2",
+                      "url": "//assets.ctfassets.net/citn2sn5tdjr/6rs2wakXBpA3upPDU99eMX/81eecd33ceae9d86b3b4b06277dc9b9f/original.doc",
+                    },
+                  ],
+                  "image": Object {
+                    "desktop": Object {
+                      "alt": null,
+                      "url": "https://assets2.brandfolder.io/bf-boulder-prod/23srvqxgjnh5mkfswxn64893/v/61471532/original/Bkg-Contemporary-Loft-Office-with-Trimble-Globe.jpg",
+                    },
+                  },
+                  "title": "Test Article",
+                  "url": "/en/articles/test-article",
+                },
+              ],
+              "key": "October-2021",
+              "title": "October 2021",
+            },
+          ]
+        }
+        variant="long-details"
+      />
+    </div>
+  </section>
+</section>
+`;

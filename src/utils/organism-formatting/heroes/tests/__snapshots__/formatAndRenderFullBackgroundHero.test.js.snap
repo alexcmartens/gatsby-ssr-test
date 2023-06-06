@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderFullBackgroundHero renders correctly 1`] = `
+<div
+  content={
+    Object {
+      "backgroundImage": Object {
+        "lazyLoad": true,
+      },
+      "bottomBackgroundImage": Object {
+        "lazyLoad": true,
+      },
+      "leftContent": <PageSections
+        isNested={true}
+        marginTopAndBottom={true}
+        pageSections={
+          Array [
+            Object {
+              "__typename": "ContentfulCtaWithTextAndHeader",
+              "alignment": "left",
+              "body": Object {
+                "childMarkdownRemark": Object {
+                  "html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit vitae molestie aliquam iaculis eu et ultricies nec. Facilisis velit orci, amet mattis arcu pretium a. Tincidunt lacinia tempus dignissim elementum.</p>",
+                },
+              },
+              "contentWidth": false,
+              "ctaButtons": Array [
+                Object {
+                  "text": "About",
+                  "url": "/about",
+                },
+                Object {
+                  "text": "All Feats",
+                  "url": "/all-feats",
+                },
+              ],
+              "eyebrow": "Eyebrow Lorem ipsum",
+              "headline": "Headline title",
+              "subhead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "variant": "transparent light text",
+            },
+          ]
+        }
+      />,
+      "rightContent": null,
+      "rightContentType": null,
+      "rightImage": Object {
+        "alt": "720x720",
+        "focalPointImage": Object {
+          "disableImageCompression": undefined,
+          "height": 720,
+          "title": "720x720",
+          "url": "//images.ctfassets.net/citn2sn5tdjr/2aIM2EvXTK5yrpIHrvP5k5/6f7a3669abb2bf2ec39b635a91da90f6/720x720.jpg",
+          "width": 720,
+          "x": 358,
+          "y": 224,
+        },
+        "type": "focalPointImage",
+        "wrapperHeight": undefined,
+      },
+      "shapeBorderColor": "#F8F8FB",
+      "shapeType": "circle",
+      "variant": "variant-3",
+    }
+  }
+  motion={false}
+  theme={
+    Object {
+      "accordionIconColor": "#0063A3",
+      "backgroundColor": "#F8F8FB",
+      "color": "#242D2F",
+      "ctaOne": "primary--1",
+      "ctaTwo": "secondary--1",
+      "iconColor": "#252A2E",
+      "theme": "theme-1",
+    }
+  }
+/>
+`;

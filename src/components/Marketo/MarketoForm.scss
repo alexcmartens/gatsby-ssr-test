@@ -1,0 +1,604 @@
+@use "~terra-one/dist/global-styles/global-vars.scss" as vars;
+@use "~terra-one/dist/global-styles/mixins/typography.scss" as typography;
+
+.marketo-form {
+  display: flex;
+  justify-content: center;
+  font-family: vars.$header-font-family;
+  padding: vars.spacing("super") calc((100vw - 1200px) / 2);
+
+  @media screen and (max-width: 1272px) {
+    padding: vars.spacing("super") 36px;
+  }
+  @media (max-width: vars.$breakpoint-sm) {
+    padding: 0;
+  }
+
+  .image-container {
+    width: 50%;
+    padding: 80px 30px 80px 0px;
+
+    @media (max-width: vars.$breakpoint-sm) {
+      padding: 40px 20px 40px 0px;
+    }
+    @media (max-width: vars.$breakpoint-xs) {
+      width: 0%;
+      display: none;
+    }
+
+    &__wrapper {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: right 0px top 0px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .form-container {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 80px 30px;
+
+    &.has-image {
+      width: 50%;
+      min-height: 1160px;
+    }
+
+    @media (max-width: vars.$breakpoint-sm) {
+      padding: 40px 20px;
+      &.has-image {
+        width: 50%;
+        min-height: 740px;
+      }
+    }
+
+    @media (max-width: vars.$breakpoint-xs) {
+      padding: 40px 30px;
+      &.has-image {
+        width: 100%;
+        min-height: 0;
+      }
+    }
+
+    .form-head {
+      padding: 40px 25px 25px 25px;
+      background-image: url("../../images/form-border-top-light.svg");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100%;
+
+      @media (max-width: vars.$breakpoint-xs) {
+        padding: 40px 5px 0 5px;
+      }
+
+      .header {
+        @include typography.benton-bold();
+        font-size: 42px;
+        margin-bottom: 16px;
+
+        @media (max-width: vars.$breakpoint-xs) {
+          font-size: 38px;
+        }
+      }
+
+      .directions {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 50px;
+      }
+
+      .eyebrow {
+        @include typography.benton-bold();
+        font-size: 12px;
+      }
+    }
+
+    .form-outer {
+      padding: 0 25px 0 25px;
+      background-image: url("../../images/form-border-bottom-light.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+
+      @media (max-width: vars.$breakpoint-xs) {
+        padding: 0 5px 0 5px;
+      }
+
+      &--submit-text {
+        @include typography.benton-bold();
+        padding: 20px 0;
+        p {
+          font-size: 30px;
+        }
+        @media (max-width: vars.$breakpoint-sm) {
+          p {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    .form-outer.dark {
+      background-image: url("../../images/form-border-bottom-dark.svg");
+    }
+
+    .form {
+      width: 100%;
+      padding-bottom: 50px;
+    }
+
+    &.dark {
+      background-color: #003054;
+      color: white;
+
+      .form-head {
+        background-image: url("../../images/form-border-top-dark.svg");
+
+        .header {
+          color: white;
+        }
+      }
+
+      .form {
+        .mktoRangeField {
+          &:active .mktoRangeValue,
+          &:hover .mktoRangeValue,
+          &:focus .mktoRangeValue,
+          .mktoRangeValue.in-focus {
+            .mktoRangeValueText {
+              background-color: #ffce74;
+              color: white;
+            }
+
+            .mktoRangeValueArrow {
+              background-color: #ffce74;
+            }
+          }
+        }
+
+        input,
+        textarea,
+        select {
+          border: unset;
+        }
+
+        input[type="range"] {
+          background-color: #003054;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+          background: #ffce74;
+          box-shadow: 0 0 0 10px #ffce74;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+          background: #ffce74;
+          -webkit-box-shadow: 0 0 0 12px #ffce74;
+          box-shadow: 0 0 0 12px #ffce74;
+        }
+
+        input[type="checkbox"] {
+          appearance: none;
+
+          &:before,
+          &:after {
+            background-color: #003054;
+            background-image: url("../../images/checkbox-empty-dark.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+
+          &:checked:before {
+            background-image: url("../../images/checkbox-selected-dark.svg");
+          }
+        }
+
+        @-moz-document url-prefix() {
+          input[type="checkbox"] {
+            appearance: none;
+            background-color: #003054;
+            background-image: url("../../images/checkbox-empty-dark.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &:checked {
+              background-image: url("../../images/checkbox-selected-dark.svg");
+            }
+          }
+        }
+
+        .mktoRadioList {
+          input[type="radio"] {
+            &:before,
+            &:after {
+              background-color: #003054;
+              background-image: url("../../images/radio-empty-dark.svg");
+            }
+
+            &:checked:before {
+              background-image: url("../../images/radio-selected-dark.svg");
+              z-index: 2;
+            }
+          }
+
+          @-moz-document url-prefix() {
+            input[type="radio"] {
+              appearance: none;
+              background-image: url("../../images/radio-empty-dark.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+
+              &:checked {
+                background-image: url("../../images/radio-selected-dark.svg");
+              }
+            }
+          }
+        }
+
+        .mktoButton {
+          background-color: #fbad26;
+        }
+      }
+    }
+  }
+}
+
+.mktoForm {
+  visibility: hidden;
+}
+
+.mktoForm[data-styles-ready="true"] {
+  visibility: visible;
+
+  .mktoFormCol {
+    width: 100%;
+  }
+
+  .mktoFieldWrap {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 25px;
+
+    .mktoError {
+      position: relative;
+      right: unset !important;
+      bottom: unset !important;
+      width: 100%;
+
+      .mktoErrorArrowWrap {
+        display: none;
+      }
+
+      .mktoErrorMsg {
+        min-width: 100%;
+        padding: 0 0 0 24px;
+        margin: 10px 0 0 0;
+        background-image: unset;
+        background-color: unset;
+        border: unset;
+        color: #f03738;
+        font-size: 14px;
+        line-height: 24px;
+        box-shadow: unset;
+        text-shadow: unset;
+        background-image: url("../../images/warning.svg");
+        background-repeat: no-repeat;
+        background-position: left 3px;
+        background-size: 16px;
+      }
+    }
+
+    .mktoLabel,
+    .mktoHtmlText {
+      padding: 0;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    #LblviewpointPrivacyStatement {
+      width: 84%;
+      @media (max-width: vars.$breakpoint-sm) {
+        width: 80%;
+      }
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      margin-top: 8px;
+      padding: 15px;
+      font-size: 14px;
+      line-height: 14px;
+      color: #585c65;
+      border: 1px solid #90939f;
+    }
+
+    input::placeholder {
+      visibility: hidden;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      -webkit-appearance: none;
+      border: unset;
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+      height: 100%;
+      -webkit-appearance: none;
+      margin-top: -1px;
+      background: #d1d2d8;
+    }
+
+    input[type="range"]::-moz-range-track {
+      width: 100%;
+      height: 10px;
+      -webkit-appearance: none;
+      margin-top: -1px;
+      transform: translateY(-5px);
+      background: #d1d2d8;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      max-width: 10px;
+      overflow: visible;
+      -webkit-appearance: none;
+      height: 10px;
+      background: #0063a3;
+      box-shadow: 0 0 0 10px #0063a3;
+      border-radius: 100%;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      max-width: 12px;
+      overflow: visible;
+      -webkit-appearance: none;
+      height: 12px;
+      background: #0063a3;
+      -webkit-box-shadow: 0 0 0 12px #0063a3;
+      box-shadow: 0 0 0 12px #0063a3;
+      border: 0;
+      border-radius: 100%;
+      transform: translateY(-5px);
+    }
+
+    input[type="checkbox"] {
+      position: relative;
+      border: unset;
+      width: 30px;
+      display: inline-block;
+      &:before,
+      &:after {
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        content: "";
+        background-image: url("../../images/checkbox-empty-light.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+      }
+
+      &:checked:before {
+        background-image: url("../../images/checkbox-selected-light.svg");
+        z-index: 2;
+      }
+    }
+
+    @-moz-document url-prefix() {
+      input[type="checkbox"] {
+        appearance: none;
+        background-image: url("../../images/checkbox-empty-light.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:checked {
+          background-image: url("../../images/checkbox-selected-light.svg");
+        }
+      }
+    }
+
+    input[type="date"] {
+      width: auto;
+      margin-right: 100%;
+    }
+
+    @-moz-document url-prefix() {
+      input[type="date"] {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    textarea {
+      box-sizing: border-box;
+      height: 100px;
+    }
+
+    select {
+      position: relative;
+      margin-top: 8px;
+      height: unset;
+      padding: 15px 15px 15px 43px;
+      background-color: white;
+      font-size: 14px;
+      line-height: 14px;
+      color: #585c65;
+      background-image: url("../../images/chevron-down.svg");
+      background-repeat: no-repeat;
+      background-position: 15px center;
+    }
+
+    .mktoRangeField {
+      width: 100%;
+      border-radius: 5px;
+
+      &:active .mktoRangeValue,
+      &:hover .mktoRangeValue,
+      &:focus .mktoRangeValue,
+      .mktoRangeValue.in-focus {
+        .mktoRangeValueText {
+          background-color: #005f9e;
+          color: white;
+        }
+
+        .mktoRangeValueArrow {
+          background-color: #005f9e;
+        }
+      }
+
+      .mktoRangeValue {
+        position: relative;
+        transform: translateY(5px);
+        display: block;
+
+        .mktoRangeValueText {
+          background-color: rgba(0, 0, 0, 0);
+          color: rgba(0, 0, 0, 0);
+          background-image: unset;
+          box-shadow: unset;
+          text-shadow: unset;
+          border: unset;
+        }
+
+        .mktoRangeValueArrow {
+          background-color: rgba(0, 0, 0, 0);
+          border: unset;
+        }
+      }
+    }
+
+    .mktoCheckboxList {
+      &.multiCheckbox {
+        order: 2;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        @media screen and (min-width: vars.$breakpoint-sm) {
+          grid-template-columns: 30px 1fr 30px 1fr;
+        }
+      }
+      input {
+        height: 20px;
+        margin-top: 0;
+      }
+      label {
+        font-size: 14px;
+        display: inline-block;
+        margin-top: 0.6em;
+      }
+    }
+
+    .mktoRadioList {
+      position: relative;
+      width: 100%;
+      padding: 25px 0 0 16px;
+
+      input[type="radio"] {
+        position: relative;
+        width: 20px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+
+        &:before,
+        &:after {
+          position: absolute;
+          display: block;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: white;
+          content: "";
+          background-image: url("../../images/radio-empty-light.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;
+        }
+
+        &:checked:before {
+          background-image: url("../../images/radio-selected-light.svg");
+          z-index: 2;
+        }
+      }
+
+      @-moz-document url-prefix() {
+        input[type="radio"] {
+          margin-right: 8px;
+          border: 0;
+          appearance: none;
+          background-image: url("../../images/radio-empty-light.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+
+          &:checked {
+            background-image: url("../../images/radio-selected-light.svg");
+          }
+        }
+      }
+
+      label {
+        width: calc(100% - 20px);
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 32px;
+        padding-top: 5px;
+
+        &:not(:last-child) {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .mktoButton {
+    background-color: #005f9e;
+    color: white;
+    padding: 12px 24px;
+  }
+}
+
+.mktoFormCol {
+  flex-direction: row;
+  .mktoCheckboxList {
+    order: 1;
+    align-self: flex-start;
+  }
+  label {
+    max-width: 80%;
+    order: 2;
+  }
+  select,
+  input,
+  textarea,
+  .mktoError {
+    order: 2;
+  }
+}
+
+@media (max-width: vars.$breakpoint-sm) {
+  .mktoForm .mktoFormCol .mktoCheckboxList > label {
+    margin-left: 5px;
+  }
+}
+
+.marketo-from-layout-wrapper {
+  padding: 0 !important;
+  .form-container {
+    padding: 0;
+  }
+}
+
+div:has(> label[data-for-type="checkbox"]) {
+  display: flex;
+  flex-wrap: wrap;
+}

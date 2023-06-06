@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderSuperHero renders correctly 1`] = `
+<div
+  className="super-hero__wrapper"
+>
+  <section
+    className="default-layout   mockconstructor
+      default-layout--no-bottom-margin"
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "marginBottom": "",
+      }
+    }
+  >
+    <section
+      className="default-layout__grid 
+          
+        "
+      style={
+        Object {
+          "backgroundColor": "",
+          "marginBottom": "",
+        }
+      }
+    >
+      <div
+        className="default-layout__children "
+      >
+        <div
+          content={
+            Object {
+              "closeTranscript": undefined,
+              "contentSide": undefined,
+              "ctas": null,
+              "dataPoints": undefined,
+              "eyebrow": "eyebrow",
+              "focusedImage": null,
+              "header": "header",
+              "lazyLoad": false,
+              "setVideoProgress": undefined,
+              "subHeader": null,
+              "superHeroAnimation": null,
+              "text": null,
+              "theme": Object {
+                "accordionIconColor": "#0063A3",
+                "backgroundColor": "#FFFFFF",
+                "color": "#252A2E",
+                "ctaOne": "primary--1",
+                "ctaTwo": "primary--2",
+                "darkTheme": false,
+                "iconColor": "#252A2E",
+                "theme": "white",
+              },
+              "thumbnail": null,
+              "transcript": undefined,
+              "transcriptText": undefined,
+              "variant": "variant_1",
+              "video": undefined,
+              "videoProgress": undefined,
+            }
+          }
+        />
+      </div>
+    </section>
+  </section>
+</div>
+`;

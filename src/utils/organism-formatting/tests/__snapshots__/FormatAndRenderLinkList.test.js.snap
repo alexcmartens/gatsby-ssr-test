@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderLinkList renders correctly 1`] = `
+<section
+  className="default-layout   mockconstructor
+      default-layout--no-bottom-margin"
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "marginBottom": "",
+    }
+  }
+>
+  <section
+    className="default-layout__grid 
+          
+        "
+    style={
+      Object {
+        "backgroundColor": "",
+        "marginBottom": "",
+      }
+    }
+  >
+    <div
+      className="default-layout__children "
+    >
+      <div
+        links={
+          Array [
+            Object {
+              "Link": [MockFunction],
+              "destination": "/en/undefined",
+              "external": false,
+              "icon": null,
+              "linkText": undefined,
+              "onClick": null,
+              "override": false,
+              "setOverride": [Function],
+              "video": undefined,
+            },
+            Object {
+              "Link": [MockFunction],
+              "destination": "/en/undefined",
+              "external": false,
+              "icon": null,
+              "linkText": undefined,
+              "onClick": null,
+              "override": false,
+              "setOverride": [Function],
+              "video": undefined,
+            },
+            Object {
+              "Link": [MockFunction],
+              "destination": "/en/undefined",
+              "external": false,
+              "icon": null,
+              "linkText": undefined,
+              "onClick": null,
+              "override": false,
+              "setOverride": [Function],
+              "video": undefined,
+            },
+            Object {
+              "Link": [MockFunction],
+              "destination": "/en/undefined",
+              "external": false,
+              "icon": null,
+              "linkText": undefined,
+              "onClick": null,
+              "override": false,
+              "setOverride": [Function],
+              "video": undefined,
+            },
+          ]
+        }
+        theme={
+          Object {
+            "accordionIconColor": "#0063A3",
+            "backgroundColor": "#FFFFFF",
+            "color": "#252A2E",
+            "ctaOne": "primary--1",
+            "ctaTwo": "primary--2",
+            "darkTheme": false,
+            "iconColor": "#252A2E",
+            "theme": "white",
+          }
+        }
+      />
+    </div>
+  </section>
+</section>
+`;

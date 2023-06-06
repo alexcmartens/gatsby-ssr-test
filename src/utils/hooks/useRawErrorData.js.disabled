@@ -1,0 +1,326 @@
+import { useStaticQuery, graphql } from "gatsby"
+
+const useRawErrorData = () => {
+  const data = useStaticQuery(graphql`
+    query ErrorData {
+      allContentfulPageBase(filter: { slug: { eq: "error" } }) {
+        edges {
+          node {
+            title
+            node_locale
+            sections {
+              ... on ContentfulSuperHero {
+                __typename
+                disableTopBottomMargin
+                contentRatio
+                displayOption
+                contentWidth
+                contentSide: contentAlignment
+                backgroundColorPadding
+                colorScheme
+                jumpNavTitle
+                anchor
+                media {
+                  ... on ContentfulImageWithFocalPoint {
+                    id
+                    focalPoint {
+                      focalPoint {
+                        x
+                        y
+                      }
+                    }
+                    image {
+                      title
+                      file {
+                        url
+                        details {
+                          image {
+                            height
+                            width
+                          }
+                        }
+                      }
+                    }
+                  }
+                  ... on ContentfulVidyardVideo {
+                    videoTitle
+                    videoThumbnail {
+                      focalPoint {
+                        focalPoint {
+                          y
+                          x
+                        }
+                      }
+                      title
+                      altText
+                      image {
+                        file {
+                          url
+                          details {
+                            image {
+                              height
+                              width
+                            }
+                          }
+                        }
+                      }
+                    }
+                    videoTranscript {
+                      videoTranscript
+                    }
+                    uuid
+                  }
+                  ... on ContentfulVimeoOrYouTubeVideo {
+                    id
+                    videoThumbnail {
+                      focalPoint {
+                        focalPoint {
+                          y
+                          x
+                        }
+                      }
+                      title
+                      altText
+                      image {
+                        file {
+                          url
+                          details {
+                            image {
+                              height
+                              width
+                            }
+                          }
+                        }
+                      }
+                    }
+                    videoTranscript {
+                      videoTranscript
+                    }
+                    videoTitle
+                    videoType
+                    videoUrl
+                    videoCode
+                    videoReferenceType
+                    videoCode
+                    videoLength
+                  }
+                }
+                heroContent {
+                  ... on ContentfulAccordion {
+                    ...Accordion
+                  }
+                  ... on ContentfulCtaWithTextAndHeader {
+                    ...CTA
+                  }
+                  ... on ContentfulIconTextList {
+                    ...IconTextList
+                  }
+                  ... on ContentfulLinkList {
+                    ...LinkList
+                  }
+                }
+                dataPoints {
+                  ... on ContentfulDataPoint {
+                    ...DataPoint
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      allContentfulGlobalFooter(
+        filter: {
+          spaceId: { eq: "citn2sn5tdjr" }
+          title: { eq: "Global Footer" }
+        }
+      ) {
+        edges {
+          node {
+            mainLogo {
+              ... on ContentfulBrandfolderAsset {
+                id
+                brandfolderAsset {
+                  url
+                }
+                altText
+              }
+              ... on ContentfulImage {
+                contentful_id
+                __typename
+                altText
+                image {
+                  file {
+                    url
+                  }
+                }
+              }
+            }
+            legalStuff {
+              ... on ContentfulLink {
+                text
+                url {
+                  ... on ContentfulExternalLink {
+                    text
+                    url
+                  }
+                  ... on ContentfulPageBase {
+                    text: pageName
+                    url: slug
+                  }
+                  ... on ContentfulNews {
+                    text: title
+                    url: slug
+                  }
+                  ... on ContentfulArticlesEventsAndProse {
+                    text: title
+                    url: slug
+                  }
+                }
+              }
+            }
+            text {
+              text
+            }
+          }
+        }
+      }
+
+      allContentfulFooter {
+        edges {
+          node {
+            sectorCalloutLinks {
+              link {
+                ... on ContentfulLink {
+                  ...Link
+                }
+              }
+              title
+              subTitle
+              icon {
+                file {
+                  url
+                }
+              }
+            }
+            sectorFooterMenus {
+              title
+              menuLinks {
+                ... on ContentfulLink {
+                  text
+                  url {
+                    ... on ContentfulExternalLink {
+                      text
+                      url
+                    }
+                    ... on ContentfulPageBase {
+                      text: pageName
+                      url: slug
+                    }
+                    ... on ContentfulNews {
+                      text: title
+                      url: slug
+                    }
+                    ... on ContentfulArticlesEventsAndProse {
+                      text: title
+                      url: slug
+                    }
+                  }
+                }
+              }
+            }
+            socialLinksTitle
+            socialLinks {
+              siteName
+              url
+              icon {
+                file {
+                  url
+                }
+              }
+            }
+          }
+        }
+      }
+
+      allContentfulOverlayNotice {
+        edges {
+          node {
+            node_locale
+            __typename
+            overlayId
+            updatedAt
+            header {
+              headline
+            }
+            richTextDetails {
+              raw
+              references {
+                ... on ContentfulExternalLink {
+                  contentful_id
+                  __typename
+                  text
+                  url
+                }
+                ... on ContentfulPageBase {
+                  contentful_id
+                  __typename
+                  title
+                  pageName
+                  slug
+                }
+              }
+            }
+            ctaButton {
+              ctaButtons {
+                ... on ContentfulLink {
+                  text
+                  url {
+                    ... on ContentfulExternalLink {
+                      text
+                      url
+                    }
+                    ... on ContentfulPageBase {
+                      text: pageName
+                      url: slug
+                    }
+                    ... on ContentfulNews {
+                      text: title
+                      url: slug
+                    }
+                    ... on ContentfulArticlesEventsAndProse {
+                      text: title
+                      url: slug
+                    }
+                  }
+                }
+              }
+            }
+            startDate
+            endDate
+            redisplayDuration
+          }
+        }
+      }
+
+      allContentfulCommonSearch(
+        filter: { searchString: { ne: "Common Search - Placeholder" } }
+      ) {
+        edges {
+          node {
+            id
+            filterList
+            searchString
+            node_locale
+          }
+        }
+      }
+    }
+  `)
+
+  return {
+    rawErrorData: data,
+  }
+}
+
+export default useRawErrorData

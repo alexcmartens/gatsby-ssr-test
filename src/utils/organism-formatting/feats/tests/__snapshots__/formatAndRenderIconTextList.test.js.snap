@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderIconTextList renders correctly 1`] = `
+<div
+  disableIcon={false}
+  items={
+    Array [
+      Object {
+        "body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit vitae   molestie aliquam iaculis eu et ultricies nec.</p>",
+        "headline": "Headline Lorem ipsum dolor sit amet",
+        "icon": null,
+      },
+    ]
+  }
+  paddingClass=""
+  theme={
+    Object {
+      "accordionIconColor": "#0063A3",
+      "backgroundColor": "#F8F8FB",
+      "color": "#242D2F",
+      "ctaOne": "primary--1",
+      "ctaTwo": "secondary--1",
+      "iconColor": "#252A2E",
+      "theme": "theme-1",
+    }
+  }
+/>
+`;

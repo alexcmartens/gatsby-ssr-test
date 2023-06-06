@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderPullQuote renders correctly 1`] = `
+<section
+  className="default-layout   mockconstructor
+      default-layout--no-bottom-margin"
+  style={
+    Object {
+      "backgroundColor": "",
+      "marginBottom": "",
+    }
+  }
+>
+  <section
+    className="default-layout__grid 
+          
+        "
+    style={
+      Object {
+        "backgroundColor": "",
+        "marginBottom": "",
+      }
+    }
+  >
+    <div
+      className="default-layout__children "
+    >
+      <div
+        content={
+          Object {
+            "Link": [MockFunction],
+            "appearance": "Dark",
+            "backgroundImage": Object {
+              "alt": "River",
+              "focalPointImage": Object {
+                "height": 500,
+                "title": "River",
+                "url": "//images.ctfassets.net/citn2sn5tdjr/7zF5J9FlzLzm2SFrT6inNJ/2fe28905a10bd27e8d6b178d3a8239e6/save.png",
+                "width": 500,
+                "x": 490,
+                "y": 323,
+              },
+            },
+            "cta": Object {
+              "Link": [MockFunction],
+              "className": "secondary--1",
+              "iconImage": undefined,
+              "override": null,
+              "setOverride": null,
+              "text": "Call To Action",
+              "url": "/en/undefined",
+              "video": null,
+            },
+            "imagePosition": "Right",
+            "imageWidth": "1/2",
+            "quote": Object {
+              "source": "Gariatur Nostrud Pariatur",
+              "sourceTitle": "TITLE OR CREDENTIALS FOR THE QUOTEE",
+              "text": "Pull Quote can be aliquip aliqua aliqua id qui aute anim reprehenderit tempor velit est sint laborum. Cillum et laboris aliquip consequat",
+            },
+            "sideImage": Object {
+              "alt": "River",
+              "focalPointImage": Object {
+                "height": 500,
+                "title": "River",
+                "url": "//images.ctfassets.net/citn2sn5tdjr/7zF5J9FlzLzm2SFrT6inNJ/2fe28905a10bd27e8d6b178d3a8239e6/save.png",
+                "width": 500,
+                "x": 490,
+                "y": 323,
+              },
+            },
+            "theme": Object {
+              "backgroundColor": "#252a2e",
+              "color": "#fff",
+              "ctaClass": "secondary--1",
+            },
+            "topImage": Object {
+              "alt": "River",
+              "focalPointImage": Object {
+                "height": 500,
+                "title": "River",
+                "url": "//images.ctfassets.net/citn2sn5tdjr/7zF5J9FlzLzm2SFrT6inNJ/2fe28905a10bd27e8d6b178d3a8239e6/save.png",
+                "width": 500,
+                "x": 490,
+                "y": 323,
+              },
+            },
+          }
+        }
+      />
+    </div>
+  </section>
+</section>
+`;

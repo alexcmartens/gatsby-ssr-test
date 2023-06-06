@@ -1,0 +1,341 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderTabs renders correctly 1`] = `
+<section
+  className="default-layout   mockconstructor
+      "
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "marginBottom": "",
+    }
+  }
+>
+  <section
+    className="default-layout__grid 
+          
+        "
+    style={
+      Object {
+        "backgroundColor": "",
+        "marginBottom": "",
+      }
+    }
+  >
+    <div
+      className="default-layout__children "
+    >
+      <div
+        displayThumbnails={true}
+        orientation="top"
+        paddingClass="page-section-wrapper"
+        tabs={
+          Array [
+            Object {
+              "content": <PageSections
+                location={
+                  Object {
+                    "hash": "",
+                    "host": "localhost:8000",
+                    "hostname": "localhost",
+                    "href": "http://localhost:8000/en/test-tabs-page/",
+                    "key": "initial",
+                    "origin": "http://localhost:8000",
+                    "pathname": "/en/test-tabs-page/",
+                    "port": "8000",
+                    "protocol": "http:",
+                    "search": "",
+                    "state": null,
+                  }
+                }
+                pageSections={
+                  Array [
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Test Rich Text Content:\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"inline video: \\",\\"nodeType\\":\\"text\\"},{\\"data\\":{\\"target\\":{\\"sys\\":{\\"id\\":\\"4Q1qYVp7UkjmQB1dG930lI\\",\\"type\\":\\"Link\\",\\"linkType\\":\\"Entry\\"}}},\\"content\\":[],\\"nodeType\\":\\"embedded-entry-inline\\"},{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"video entry:\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{\\"target\\":{\\"sys\\":{\\"id\\":\\"4Q1qYVp7UkjmQB1dG930lI\\",\\"type\\":\\"Link\\",\\"linkType\\":\\"Entry\\"}}},\\"content\\":[],\\"nodeType\\":\\"embedded-entry-block\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"}],\\"nodeType\\":\\"document\\"}",
+                        "references": Array [
+                          Object {
+                            "__typename": "ContentfulFeat5",
+                            "anchor": "Feat Five #3",
+                            "animation": true,
+                            "contentful_id": "4Q1qYVp7UkjmQB1dG930lI",
+                            "header": "Feat Five #3",
+                            "subHeader": "Feat Five rendering a Vidyard Video",
+                            "text": Object {
+                              "__typename": "ContentfulWysiwygText",
+                              "wysiwygText": Object {
+                                "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"Consequat voluptate ullamco nulla adipisicing id eiusmod nulla ullamco sunt. Et laboris commodo labore aliqua. Cupidatat ut Lorem cupidatat laboris. Aute esse dolore proident aliquip sint laboris.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                              },
+                            },
+                            "video": Object {
+                              "thumbnail": Object {
+                                "file": Object {
+                                  "url": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/151f11bbe5130466fbe942aa63fd42fa/dog.jpg",
+                                },
+                              },
+                              "uuid": "oujmBkR77vwzBMV2gFoFtR",
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ]
+                }
+                tab={true}
+              />,
+              "description": "Anim aliquip aliqua a liqua id qui aute anim",
+              "header": "Tab Header Title More Text More Lorem ipsum",
+              "image": Object {
+                "alt": "Picture of black, brown, and white dog",
+                "url": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/151f11bbe5130466fbe942aa63fd42fa/dog.jpg",
+              },
+            },
+            Object {
+              "content": <PageSections
+                location={
+                  Object {
+                    "hash": "",
+                    "host": "localhost:8000",
+                    "hostname": "localhost",
+                    "href": "http://localhost:8000/en/test-tabs-page/",
+                    "key": "initial",
+                    "origin": "http://localhost:8000",
+                    "pathname": "/en/test-tabs-page/",
+                    "port": "8000",
+                    "protocol": "http:",
+                    "search": "",
+                    "state": null,
+                  }
+                }
+                pageSections={
+                  Array [
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Test Rich Text Content:\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"inline video: \\",\\"nodeType\\":\\"text\\"},{\\"data\\":{\\"target\\":{\\"sys\\":{\\"id\\":\\"4Q1qYVp7UkjmQB1dG930lI\\",\\"type\\":\\"Link\\",\\"linkType\\":\\"Entry\\"}}},\\"content\\":[],\\"nodeType\\":\\"embedded-entry-inline\\"},{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"video entry:\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{\\"target\\":{\\"sys\\":{\\"id\\":\\"4Q1qYVp7UkjmQB1dG930lI\\",\\"type\\":\\"Link\\",\\"linkType\\":\\"Entry\\"}}},\\"content\\":[],\\"nodeType\\":\\"embedded-entry-block\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"}],\\"nodeType\\":\\"document\\"}",
+                        "references": Array [
+                          Object {
+                            "__typename": "ContentfulFeat5",
+                            "anchor": "Feat Five #3",
+                            "animation": true,
+                            "contentful_id": "4Q1qYVp7UkjmQB1dG930lI",
+                            "header": "Feat Five #3",
+                            "subHeader": "Feat Five rendering a Vidyard Video",
+                            "text": Object {
+                              "__typename": "ContentfulWysiwygText",
+                              "wysiwygText": Object {
+                                "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"Consequat voluptate ullamco nulla adipisicing id eiusmod nulla ullamco sunt. Et laboris commodo labore aliqua. Cupidatat ut Lorem cupidatat laboris. Aute esse dolore proident aliquip sint laboris.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                              },
+                            },
+                            "video": Object {
+                              "thumbnail": Object {
+                                "file": Object {
+                                  "url": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/151f11bbe5130466fbe942aa63fd42fa/dog.jpg",
+                                },
+                              },
+                              "uuid": "oujmBkR77vwzBMV2gFoFtR",
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ]
+                }
+                tab={true}
+              />,
+              "description": "Anim aliquip aliqua a liqua id qui aute anim",
+              "header": "Tab Header Title More Text More Lorem ipsum",
+              "image": Object {
+                "alt": "Picture of black, brown, and white dog",
+                "url": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/151f11bbe5130466fbe942aa63fd42fa/dog.jpg",
+              },
+            },
+            Object {
+              "content": <PageSections
+                location={
+                  Object {
+                    "hash": "",
+                    "host": "localhost:8000",
+                    "hostname": "localhost",
+                    "href": "http://localhost:8000/en/test-tabs-page/",
+                    "key": "initial",
+                    "origin": "http://localhost:8000",
+                    "pathname": "/en/test-tabs-page/",
+                    "port": "8000",
+                    "protocol": "http:",
+                    "search": "",
+                    "state": null,
+                  }
+                }
+                pageSections={
+                  Array [
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Test Rich Text Content:\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"inline video: \\",\\"nodeType\\":\\"text\\"},{\\"data\\":{\\"target\\":{\\"sys\\":{\\"id\\":\\"4Q1qYVp7UkjmQB1dG930lI\\",\\"type\\":\\"Link\\",\\"linkType\\":\\"Entry\\"}}},\\"content\\":[],\\"nodeType\\":\\"embedded-entry-inline\\"},{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"video entry:\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{\\"target\\":{\\"sys\\":{\\"id\\":\\"4Q1qYVp7UkjmQB1dG930lI\\",\\"type\\":\\"Link\\",\\"linkType\\":\\"Entry\\"}}},\\"content\\":[],\\"nodeType\\":\\"embedded-entry-block\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"}],\\"nodeType\\":\\"document\\"}",
+                        "references": Array [
+                          Object {
+                            "__typename": "ContentfulFeat5",
+                            "anchor": "Feat Five #3",
+                            "animation": true,
+                            "contentful_id": "4Q1qYVp7UkjmQB1dG930lI",
+                            "header": "Feat Five #3",
+                            "subHeader": "Feat Five rendering a Vidyard Video",
+                            "text": Object {
+                              "__typename": "ContentfulWysiwygText",
+                              "wysiwygText": Object {
+                                "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"Consequat voluptate ullamco nulla adipisicing id eiusmod nulla ullamco sunt. Et laboris commodo labore aliqua. Cupidatat ut Lorem cupidatat laboris. Aute esse dolore proident aliquip sint laboris.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                              },
+                            },
+                            "video": Object {
+                              "thumbnail": Object {
+                                "file": Object {
+                                  "url": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/151f11bbe5130466fbe942aa63fd42fa/dog.jpg",
+                                },
+                              },
+                              "uuid": "oujmBkR77vwzBMV2gFoFtR",
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ]
+                }
+                tab={true}
+              />,
+              "description": "Anim aliquip aliqua a liqua id qui aute anim",
+              "header": "Tab Header Title More Text More Lorem ipsum",
+              "image": Object {
+                "alt": "Picture of black, brown, and white dog",
+                "url": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/151f11bbe5130466fbe942aa63fd42fa/dog.jpg",
+              },
+            },
+            Object {
+              "content": <PageSections
+                location={
+                  Object {
+                    "hash": "",
+                    "host": "localhost:8000",
+                    "hostname": "localhost",
+                    "href": "http://localhost:8000/en/test-tabs-page/",
+                    "key": "initial",
+                    "origin": "http://localhost:8000",
+                    "pathname": "/en/test-tabs-page/",
+                    "port": "8000",
+                    "protocol": "http:",
+                    "search": "",
+                    "state": null,
+                  }
+                }
+                pageSections={
+                  Array [
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Test Rich Text Content:\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"inline video: \\",\\"nodeType\\":\\"text\\"},{\\"data\\":{\\"target\\":{\\"sys\\":{\\"id\\":\\"4Q1qYVp7UkjmQB1dG930lI\\",\\"type\\":\\"Link\\",\\"linkType\\":\\"Entry\\"}}},\\"content\\":[],\\"nodeType\\":\\"embedded-entry-inline\\"},{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"video entry:\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{\\"target\\":{\\"sys\\":{\\"id\\":\\"4Q1qYVp7UkjmQB1dG930lI\\",\\"type\\":\\"Link\\",\\"linkType\\":\\"Entry\\"}}},\\"content\\":[],\\"nodeType\\":\\"embedded-entry-block\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"}],\\"nodeType\\":\\"document\\"}",
+                        "references": Array [
+                          Object {
+                            "__typename": "ContentfulFeat5",
+                            "anchor": "Feat Five #3",
+                            "animation": true,
+                            "contentful_id": "4Q1qYVp7UkjmQB1dG930lI",
+                            "header": "Feat Five #3",
+                            "subHeader": "Feat Five rendering a Vidyard Video",
+                            "text": Object {
+                              "__typename": "ContentfulWysiwygText",
+                              "wysiwygText": Object {
+                                "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"Consequat voluptate ullamco nulla adipisicing id eiusmod nulla ullamco sunt. Et laboris commodo labore aliqua. Cupidatat ut Lorem cupidatat laboris. Aute esse dolore proident aliquip sint laboris.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                              },
+                            },
+                            "video": Object {
+                              "thumbnail": Object {
+                                "file": Object {
+                                  "url": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/151f11bbe5130466fbe942aa63fd42fa/dog.jpg",
+                                },
+                              },
+                              "uuid": "oujmBkR77vwzBMV2gFoFtR",
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ]
+                }
+                tab={true}
+              />,
+              "description": "Anim aliquip aliqua a liqua id qui aute anim",
+              "header": "Tab Header Title More Text More Lorem ipsum",
+              "image": Object {
+                "alt": "Picture of black, brown, and white dog",
+                "url": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/151f11bbe5130466fbe942aa63fd42fa/dog.jpg",
+              },
+            },
+            Object {
+              "content": <PageSections
+                location={
+                  Object {
+                    "hash": "",
+                    "host": "localhost:8000",
+                    "hostname": "localhost",
+                    "href": "http://localhost:8000/en/test-tabs-page/",
+                    "key": "initial",
+                    "origin": "http://localhost:8000",
+                    "pathname": "/en/test-tabs-page/",
+                    "port": "8000",
+                    "protocol": "http:",
+                    "search": "",
+                    "state": null,
+                  }
+                }
+                pageSections={
+                  Array [
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Test Rich Text Content:\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"inline video: \\",\\"nodeType\\":\\"text\\"},{\\"data\\":{\\"target\\":{\\"sys\\":{\\"id\\":\\"4Q1qYVp7UkjmQB1dG930lI\\",\\"type\\":\\"Link\\",\\"linkType\\":\\"Entry\\"}}},\\"content\\":[],\\"nodeType\\":\\"embedded-entry-inline\\"},{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"video entry:\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{\\"target\\":{\\"sys\\":{\\"id\\":\\"4Q1qYVp7UkjmQB1dG930lI\\",\\"type\\":\\"Link\\",\\"linkType\\":\\"Entry\\"}}},\\"content\\":[],\\"nodeType\\":\\"embedded-entry-block\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"},{\\"data\\":{},\\"content\\":[{\\"data\\":{},\\"marks\\":[],\\"value\\":\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\",\\"nodeType\\":\\"text\\"}],\\"nodeType\\":\\"paragraph\\"}],\\"nodeType\\":\\"document\\"}",
+                        "references": Array [
+                          Object {
+                            "__typename": "ContentfulFeat5",
+                            "anchor": "Feat Five #3",
+                            "animation": true,
+                            "contentful_id": "4Q1qYVp7UkjmQB1dG930lI",
+                            "header": "Feat Five #3",
+                            "subHeader": "Feat Five rendering a Vidyard Video",
+                            "text": Object {
+                              "__typename": "ContentfulWysiwygText",
+                              "wysiwygText": Object {
+                                "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"Consequat voluptate ullamco nulla adipisicing id eiusmod nulla ullamco sunt. Et laboris commodo labore aliqua. Cupidatat ut Lorem cupidatat laboris. Aute esse dolore proident aliquip sint laboris.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                              },
+                            },
+                            "video": Object {
+                              "thumbnail": Object {
+                                "file": Object {
+                                  "url": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/151f11bbe5130466fbe942aa63fd42fa/dog.jpg",
+                                },
+                              },
+                              "uuid": "oujmBkR77vwzBMV2gFoFtR",
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ]
+                }
+                tab={true}
+              />,
+              "description": "Anim aliquip aliqua a liqua id qui aute anim",
+              "header": "Tab Header Title More Text More Lorem ipsum",
+              "image": Object {
+                "alt": "Picture of black, brown, and white dog",
+                "url": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/151f11bbe5130466fbe942aa63fd42fa/dog.jpg",
+              },
+            },
+          ]
+        }
+        variant="text-background-light"
+      />
+    </div>
+  </section>
+</section>
+`;

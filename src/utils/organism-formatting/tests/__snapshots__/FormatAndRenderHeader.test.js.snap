@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderHeader renders correctly 1`] = `
+<section
+  className="default-layout   mockconstructor
+      "
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "marginBottom": "",
+    }
+  }
+>
+  <section
+    className="default-layout__grid 
+          
+        "
+    style={
+      Object {
+        "backgroundColor": "",
+        "marginBottom": "",
+      }
+    }
+  >
+    <div
+      className="default-layout__children "
+    >
+      <div
+        eyebrow="Eyebrow option"
+        headline="Header title"
+        subhead="Subhead can go here."
+      />
+    </div>
+  </section>
+</section>
+`;

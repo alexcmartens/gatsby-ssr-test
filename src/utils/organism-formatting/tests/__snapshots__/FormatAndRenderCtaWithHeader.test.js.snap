@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderCtaWithHeader renders correctly 1`] = `
+<div
+  alignment="left"
+  buttons={
+    Array [
+      Object {
+        "override": false,
+        "setOverride": [Function],
+        "text": "123",
+        "video": undefined,
+      },
+      Object {
+        "override": false,
+        "setOverride": [Function],
+        "text": "123",
+        "video": undefined,
+      },
+    ]
+  }
+  content="<p>Anim aliquip aliqua aliqua id qui aute anim reprehenderit tempor velit est sint laborum. Cillum et laboris aliquip consequat. Consectetur commodo nisi laborum voluptate. Commodo est ullamco pariatur ut nostrud pariatur. Anim aliquip aliqua aliqua id qui aute anim reprehenderit tempor velit est sint laborum. Cillum et laboris aliquip consequat.</p>
+<ul>
+<li>Cillum et laboris aliquip consequat. El nu consectetur commodo nisi laborum voluptate.</li>
+<li>Cillum et laboris aliquip consequat. El nu consectetur commodo nisi laborum voluptate.</li>
+</ul>"
+  eyebrow="Eyebrow option"
+  headline="Header title"
+  subhead="Subhead can go here."
+  variant="dark"
+/>
+`;

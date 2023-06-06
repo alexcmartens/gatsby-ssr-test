@@ -1,0 +1,195 @@
+import React from "react"
+import renderPaddingOrFullBleed from "../renderPaddingOrFullBleed"
+import { useStaticQuery, graphql } from "gatsby"
+import dayjs from "dayjs"
+import { formatFocusedImage } from "../formatBaseMolecules"
+import { TimeBasedList } from "terra-one"
+
+const placeHolderRemoval = data => {
+  if (!data || !data.length) {
+    return []
+  }
+  return data.filter(item => {
+    return item?.node?.metadata?.tags?.[0]?.name !== "Required - Do Not Delete"
+  })
+}
+
+const FormatAndRenderListEntries = ({ data, locale, overrideSet }) => {
+  let variant = data?.variant
+  const displayType = data?.entryType
+  let listQuery = useStaticQuery(listItemsQuery)
+
+  const articlesAndEventsProseData = placeHolderRemoval(
+    listQuery?.allContentfulArticlesEventsAndProse?.edges
+  )
+
+  const allContentfulNewsData = placeHolderRemoval(
+    listQuery?.allContentfulNews?.edges
+  )
+
+  let listItems = [
+    ...(articlesAndEventsProseData || []),
+    ...(allContentfulNewsData || []),
+  ]
+
+  let validEntries = []
+  let groups = []
+  let urlType = ""
+
+  if (displayType.toLowerCase() === "article") {
+    urlType = "articles"
+  } else if (displayType.toLowerCase() === "prose") {
+    urlType = "prose"
+  } else if (displayType.toLowerCase() === "news") {
+    urlType = "news"
+  }
+
+  if (overrideSet) {
+    listItems = overrideSet
+  }
+
+  if (variant === "card-no-image") {
+    variant = "short-details"
+  } else {
+    variant = "long-details"
+  }
+
+  if (listItems) {
+    const filteredListItems = listItems.filter(
+      item =>
+        !item?.node?.metadata?.tags?.toString().includes(
+          {
+            contentful_id: "requiredDoNotDelete",
+          }.toString()
+        )
+    )
+    for (let i = 0; i < filteredListItems.length; i++) {
+      const current = filteredListItems?.[i]?.node
+      if (
+        current?.node_locale.includes(locale) &&
+        current?.contentType?.toLowerCase() === displayType?.toLowerCase()
+      ) {
+        const entryHold = {
+          title: current?.header,
+          date: current?.date
+            ? {
+                raw: current?.date,
+                day: current?.date && dayjs(current?.date).format("DD"),
+                month: current?.date && dayjs(current?.date).format("MMMM"),
+                year: current?.date && dayjs(current?.date).format("YYYY"),
+              }
+            : null,
+          endDate: current?.endDate && {
+            raw: current?.endDate,
+            day: current?.endDate && dayjs(current?.endDate).format("DD"),
+            month: current?.endDate && dayjs(current?.endDate).format("MMMM"),
+            year: current?.endDate && dayjs(current?.endDate).format("YYYY"),
+          },
+          category: current?.industryOrCategory?.name,
+          url:
+            displayType === "event"
+              ? current?.eventLink
+              : urlType
+              ? `/${locale?.toLowerCase()}/${urlType}/${current?.slug}`
+              : null,
+          description: current?.shortSummary?.shortSummary,
+          formats: current?.supportingDocuments?.map(document => ({
+            url: document?.file?.url,
+            type: document?.file?.contentType?.split("/")?.[1],
+            description: document?.description,
+          })),
+          image: {
+            desktop: {
+              url: null,
+              alt: null,
+            },
+          },
+        }
+
+        if (current?.image) {
+          if (current?.image?.brandfolderAsset?.[0]?.url) {
+            entryHold.image.desktop = {
+              url: current?.image?.brandfolderAsset?.[0]?.url,
+              alt: current?.image?.altText,
+            }
+          } else if (current?.image?.image?.file?.url) {
+            entryHold.image = formatFocusedImage(current?.image)
+          }
+        }
+
+        if (entryHold?.title && entryHold?.date) {
+          validEntries.push(entryHold)
+        }
+      }
+    }
+    validEntries =
+      validEntries?.sort(
+        (a, b) => new Date(b?.date?.raw) - new Date(a?.date?.raw)
+      ) || validEntries
+
+    if (validEntries) {
+      for (let i = 0; i < validEntries.length; i++) {
+        const current = validEntries[i]
+        let placed = false
+
+        for (let j = 0; j < groups.length; j++) {
+          const currentGroup = groups[j]
+
+          if (
+            currentGroup.key ===
+            `${current?.date?.month}-${current?.date?.year}`
+          ) {
+            currentGroup?.entries?.push(current)
+            placed = true
+            j = groups.length
+          }
+        }
+
+        if (!placed) {
+          const groupHold = {
+            key: `${current?.date?.month}-${current?.date?.year}`,
+            title:
+              current?.date?.raw &&
+              dayjs(current?.date?.raw).format("MMMM YYYY"),
+            entries: [current],
+          }
+
+          groups.push(groupHold)
+        }
+      }
+
+      groups =
+        groups?.sort(
+          (a, b) =>
+            new Date(b?.entries?.[0]?.date?.raw) -
+            new Date(a?.entries?.[0]?.date?.raw)
+        ) || groups
+    }
+  }
+  return groups?.length
+    ? renderPaddingOrFullBleed(
+        <TimeBasedList variant={variant} groups={groups} />
+      )
+    : null
+}
+
+export default FormatAndRenderListEntries
+
+const listItemsQuery = graphql`
+  query listItems {
+    allContentfulArticlesEventsAndProse {
+      edges {
+        node {
+          ...ArticlesAndEvents
+        }
+      }
+    }
+    allContentfulNews {
+      edges {
+        node {
+          ...News
+        }
+      }
+    }
+  }
+`

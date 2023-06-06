@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderScrollInPlace renders correctly 1`] = `
+<div
+  className="scroll-in-place"
+>
+  <div
+    TitleContent={[Function]}
+    slides={
+      Array [
+        Object {
+          "backgroundImage": Object {
+            "alt": "alt text",
+            "src": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/8da854bf7a41a2f2b703cbe5d1d2ae2b/dog.jpg",
+          },
+          "content": [Function],
+        },
+        Object {
+          "backgroundImage": Object {
+            "alt": "alt text",
+            "src": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/8da854bf7a41a2f2b703cbe5d1d2ae2b/dog.jpg",
+          },
+          "content": [Function],
+        },
+      ]
+    }
+    titleBackground={
+      Object {
+        "image": Object {
+          "alt": "placeholder",
+          "src": "//images.ctfassets.net/citn2sn5tdjr/5FRNqx8tTG9ewzghjTD0ft/a59add5717655ebcb357dbae7b31104b/frog-897418_1920.jpg",
+        },
+        "video": "//videos.ctfassets.net/citn2sn5tdjr/7hO7fIlKpIZrXYSABmdzU9/62056977997e3ce3327fe9ff7499ed18/video_preview_h264.mp4",
+      }
+    }
+  />
+</div>
+`;

@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatAndRenderDataPoint renders correctly 1`] = `
+<section
+  className="default-layout   renderdatapointcomponent
+      default-layout--no-bottom-margin"
+  style={
+    Object {
+      "backgroundColor": "",
+      "marginBottom": "",
+    }
+  }
+>
+  <section
+    className="default-layout__grid 
+          
+        "
+    style={
+      Object {
+        "backgroundColor": "",
+        "marginBottom": "",
+      }
+    }
+  >
+    <div
+      className="default-layout__children "
+    >
+      <div
+        points={
+          Array [
+            Object {
+              "description": undefined,
+              "header": undefined,
+              "icon": Object {
+                "type": undefined,
+              },
+            },
+            Object {
+              "description": undefined,
+              "header": undefined,
+              "icon": Object {
+                "type": undefined,
+              },
+            },
+            Object {
+              "description": undefined,
+              "header": undefined,
+              "icon": Object {
+                "type": undefined,
+              },
+            },
+            Object {
+              "description": undefined,
+              "header": undefined,
+              "icon": Object {
+                "type": undefined,
+              },
+            },
+          ]
+        }
+        theme={
+          Object {
+            "accordionIconColor": "#0063A3",
+            "backgroundColor": "#FFFFFF",
+            "color": "#252A2E",
+            "ctaOne": "primary--1",
+            "ctaTwo": "primary--2",
+            "darkTheme": false,
+            "iconColor": "#252A2E",
+            "theme": "white",
+          }
+        }
+        variant="variant_1"
+      />
+    </div>
+  </section>
+</section>
+`;

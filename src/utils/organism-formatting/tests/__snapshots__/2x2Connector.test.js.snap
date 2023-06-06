@@ -1,0 +1,618 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TwoByTwoConnector renders four backgrounds correctly 1`] = `
+<section
+  className="default-layout   mockconstructor
+      "
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "marginBottom": "",
+    }
+  }
+>
+  <section
+    className="default-layout__grid 
+          
+        "
+    style={
+      Object {
+        "backgroundColor": "",
+        "marginBottom": "",
+      }
+    }
+  >
+    <div
+      className="default-layout__children "
+    >
+      <div
+        content={
+          Object {
+            "backgroundImages": Array [
+              Object {
+                "focalPointImage": Object {
+                  "title": null,
+                  "url": "//images.ctfassets.net/citn2sn5tdjr/5D1pWT2efLAhK4Jnvsa8SW/14ba92accea63bb461f0437621a56a7d/800x400.jpg",
+                },
+              },
+              Object {
+                "focalPointImage": Object {
+                  "title": "Books 720x720",
+                  "url": "//images.ctfassets.net/citn2sn5tdjr/2aIM2EvXTK5yrpIHrvP5k5/6f7a3669abb2bf2ec39b635a91da90f6/720x720.jpg",
+                },
+              },
+              Object {
+                "focalPointImage": Object {
+                  "title": null,
+                  "url": "//images.ctfassets.net/citn2sn5tdjr/7wBhLKP8AN67gmNO0MJzsP/151f11bbe5130466fbe942aa63fd42fa/dog.jpg",
+                },
+              },
+              Object {
+                "focalPointImage": Object {
+                  "title": null,
+                  "url": "//images.ctfassets.net/citn2sn5tdjr/4NzwDSDlGECGIiokKomsyI/f78a74130fc60ae9b4fb2e0da2f405db/city.jpg",
+                },
+              },
+            ],
+            "bottomLeftBackgroundColor": "concrete-gray",
+            "bottomLeftContent": Array [
+              Object {
+                "__typename": "ContentfulHeader",
+                "content": null,
+                "eyebrow": null,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "headline": "2x2 Headline",
+                "points": undefined,
+                "subhead": null,
+                "type": "Header",
+                "url": undefined,
+              },
+              Object {
+                "__typename": "ContentfulRichTextContent",
+                "content": <RichTextConnector
+                  data={
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"This content is fits the container\\",\\"marks\\":[{\\"type\\":\\"bold\\"}],\\"data\\":{}},{\\"nodeType\\":\\"text\\",\\"value\\":\\" consectetur adipiscing elit. Integer eleifend risus ultricies  dignissim suscipit. Donec vel lacus.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                        "references": Array [],
+                      },
+                      "parentColorScheme": "transparent-dark-text",
+                    }
+                  }
+                />,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "points": undefined,
+                "type": "Rich Text",
+                "url": undefined,
+              },
+            ],
+            "bottomLeftIsImage": false,
+            "bottomRightBackgroundColor": "dark-navy",
+            "bottomRightContent": Array [
+              Object {
+                "__typename": "ContentfulHeader",
+                "content": null,
+                "eyebrow": null,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "headline": "This Is A Really Long Header, It Has Too Many Characters To Render In The 2x2",
+                "points": undefined,
+                "subhead": null,
+                "type": "Header",
+                "url": undefined,
+              },
+              Object {
+                "__typename": "ContentfulRichTextContent",
+                "content": <RichTextConnector
+                  data={
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"This content is too long for the container\\",\\"marks\\":[{\\"type\\":\\"bold\\"}],\\"data\\":{}},{\\"nodeType\\":\\"text\\",\\"value\\":\\" consectetur adipiscing elit. Integer eleifend risus ultricies dignissim suscipit. Donec vel lacus non felis volutpat mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tristique, tortor vitae      varius vehicula, velit dui faucibus dui, a malesuada metus nulla et ligula. Vestibulum vitae dignissim justo, id volutpat diam. Nunc luctus felis arcu, ac accumsan justo tincidunt eu. Mauris sed augue blandit, lobortis libero et, blandit velit. Aliquam volutpat feugiat metus at facilisis. Sed id turpis neque. Nulla et ultricies justo. Proin sed volutpat leo. Pellentesque habitant morbi tristique sene ctus et netus et malesuada fames ac turpis egestas.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                        "references": Array [],
+                      },
+                      "parentColorScheme": "transparent-light-text",
+                    }
+                  }
+                />,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "points": undefined,
+                "type": "Rich Text",
+                "url": undefined,
+              },
+            ],
+            "bottomRightIsImage": false,
+            "overlappingContent": false,
+            "shortDataPointContent": undefined,
+            "topLeftBackgroundColor": "trimble-blue",
+            "topLeftContent": Array [
+              Object {
+                "__typename": "ContentfulHeader",
+                "content": null,
+                "eyebrow": null,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "headline": "2x2 Headline",
+                "points": undefined,
+                "subhead": null,
+                "type": "Header",
+                "url": undefined,
+              },
+              Object {
+                "__typename": "ContentfulRichTextContent",
+                "content": <RichTextConnector
+                  data={
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"This content is fits the container\\",\\"marks\\":[{\\"type\\":\\"bold\\"}],\\"data\\":{}},{\\"nodeType\\":\\"text\\",\\"value\\":\\" consectetur adipiscing elit. Integer eleifend risus ultricies  dignissim suscipit. Donec vel lacus.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                        "references": Array [],
+                      },
+                      "parentColorScheme": "transparent-light-text",
+                    }
+                  }
+                />,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "points": undefined,
+                "type": "Rich Text",
+                "url": undefined,
+              },
+            ],
+            "topLeftIsImage": false,
+            "topRightBackgroundColor": "trimble-dark-gray",
+            "topRightContent": Array [
+              Object {
+                "__typename": "ContentfulHeader",
+                "content": null,
+                "eyebrow": null,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "headline": "2x2 Headline",
+                "points": undefined,
+                "subhead": null,
+                "type": "Header",
+                "url": undefined,
+              },
+              Object {
+                "__typename": "ContentfulRichTextContent",
+                "content": <RichTextConnector
+                  data={
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"This content is fits the container\\",\\"marks\\":[{\\"type\\":\\"bold\\"}],\\"data\\":{}},{\\"nodeType\\":\\"text\\",\\"value\\":\\" consectetur adipiscing elit. Integer eleifend risus ultricies  dignissim suscipit. Donec vel lacus.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                        "references": Array [],
+                      },
+                      "parentColorScheme": "transparent-light-text",
+                    }
+                  }
+                />,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "points": undefined,
+                "type": "Rich Text",
+                "url": undefined,
+              },
+            ],
+            "topRightIsImage": false,
+          }
+        }
+      />
+    </div>
+  </section>
+</section>
+`;
+
+exports[`TwoByTwoConnector renders no backgrounds correctly 1`] = `
+<section
+  className="default-layout   mockconstructor
+      "
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "marginBottom": "",
+    }
+  }
+>
+  <section
+    className="default-layout__grid 
+          
+        "
+    style={
+      Object {
+        "backgroundColor": "",
+        "marginBottom": "",
+      }
+    }
+  >
+    <div
+      className="default-layout__children "
+    >
+      <div
+        content={
+          Object {
+            "backgroundImages": Array [],
+            "bottomLeftBackgroundColor": "white",
+            "bottomLeftContent": Array [
+              Object {
+                "__typename": "ContentfulImageWithFocalPoint",
+                "altText": null,
+                "content": null,
+                "focalPoint": Object {
+                  "focalPoint": Object {
+                    "x": 1366,
+                    "y": 397,
+                  },
+                },
+                "focalPointImage": Object {
+                  "title": null,
+                  "url": "//images.ctfassets.net/citn2sn5tdjr/5FRNqx8tTG9ewzghjTD0ft/123ce44a06c3fdcf3e1b1f235a3f8793/frog-897418_1920.jpg",
+                },
+                "image": Object {
+                  "file": Object {
+                    "details": Object {
+                      "image": Object {
+                        "height": 1276,
+                        "width": 1920,
+                      },
+                    },
+                    "url": "//images.ctfassets.net/citn2sn5tdjr/5FRNqx8tTG9ewzghjTD0ft/123ce44a06c3fdcf3e1b1f235a3f8793/frog-897418_1920.jpg",
+                  },
+                },
+                "points": undefined,
+                "title": "JJung Test Pull Quote Side Image",
+                "type": "Image",
+                "url": undefined,
+              },
+            ],
+            "bottomLeftIsImage": true,
+            "bottomRightBackgroundColor": "trimble-blue",
+            "bottomRightContent": Array [
+              Object {
+                "__typename": "ContentfulHeader",
+                "content": null,
+                "eyebrow": null,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "headline": "2x2 Headline",
+                "points": undefined,
+                "subhead": null,
+                "type": "Header",
+                "url": undefined,
+              },
+              Object {
+                "__typename": "ContentfulRichTextContent",
+                "content": <RichTextConnector
+                  data={
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"This content is fits the container\\",\\"marks\\":[{\\"type\\":\\"bold\\"}],\\"data\\":{}},{\\"nodeType\\":\\"text\\",\\"value\\":\\" consectetur adipiscing elit. Integer eleifend risus ultricies  dignissim suscipit. Donec vel lacus.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                        "references": Array [],
+                      },
+                      "parentColorScheme": "transparent-light-text",
+                    }
+                  }
+                />,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "points": undefined,
+                "type": "Rich Text",
+                "url": undefined,
+              },
+            ],
+            "bottomRightIsImage": false,
+            "overlappingContent": false,
+            "shortDataPointContent": undefined,
+            "topLeftBackgroundColor": "dark-navy",
+            "topLeftContent": Array [
+              Object {
+                "__typename": "ContentfulHeader",
+                "content": null,
+                "eyebrow": null,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "headline": "2x2 Headline",
+                "points": undefined,
+                "subhead": null,
+                "type": "Header",
+                "url": undefined,
+              },
+              Object {
+                "__typename": "ContentfulRichTextContent",
+                "content": <RichTextConnector
+                  data={
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"This content is fits the container\\",\\"marks\\":[{\\"type\\":\\"bold\\"}],\\"data\\":{}},{\\"nodeType\\":\\"text\\",\\"value\\":\\" consectetur adipiscing elit. Integer eleifend risus ultricies  dignissim suscipit. Donec vel lacus.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                        "references": Array [],
+                      },
+                      "parentColorScheme": "transparent-light-text",
+                    }
+                  }
+                />,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "points": undefined,
+                "type": "Rich Text",
+                "url": undefined,
+              },
+            ],
+            "topLeftIsImage": false,
+            "topRightBackgroundColor": "white",
+            "topRightContent": Array [
+              Object {
+                "__typename": "ContentfulImageWithFocalPoint",
+                "altText": null,
+                "content": null,
+                "focalPoint": Object {
+                  "focalPoint": Object {
+                    "x": 653,
+                    "y": 386,
+                  },
+                },
+                "focalPointImage": Object {
+                  "title": null,
+                  "url": "//images.ctfassets.net/citn2sn5tdjr/4IFA2Wf4AFiEdf0RrZn23e/a751b571d31ea6f89e7097a5fbb7a68d/frog-897420_1920.jpg",
+                },
+                "image": Object {
+                  "file": Object {
+                    "details": Object {
+                      "image": Object {
+                        "height": 1343,
+                        "width": 1920,
+                      },
+                    },
+                    "url": "//images.ctfassets.net/citn2sn5tdjr/4IFA2Wf4AFiEdf0RrZn23e/a751b571d31ea6f89e7097a5fbb7a68d/frog-897420_1920.jpg",
+                  },
+                },
+                "points": undefined,
+                "title": "Travel Frog",
+                "type": "Image",
+                "url": undefined,
+              },
+            ],
+            "topRightIsImage": true,
+          }
+        }
+      />
+    </div>
+  </section>
+</section>
+`;
+
+exports[`TwoByTwoConnector renders one background correctly 1`] = `
+<section
+  className="default-layout   mockconstructor
+      "
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "marginBottom": "",
+    }
+  }
+>
+  <section
+    className="default-layout__grid 
+          
+        "
+    style={
+      Object {
+        "backgroundColor": "",
+        "marginBottom": "",
+      }
+    }
+  >
+    <div
+      className="default-layout__children "
+    >
+      <div
+        content={
+          Object {
+            "backgroundImages": Array [
+              Object {
+                "focalPointImage": Object {
+                  "title": "Books 720x720",
+                  "url": "//images.ctfassets.net/citn2sn5tdjr/2aIM2EvXTK5yrpIHrvP5k5/6f7a3669abb2bf2ec39b635a91da90f6/720x720.jpg",
+                },
+              },
+            ],
+            "bottomLeftBackgroundColor": "dark-navy",
+            "bottomLeftContent": Array [
+              Object {
+                "__typename": "ContentfulHeader",
+                "content": null,
+                "eyebrow": null,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "headline": "2x2 Headline",
+                "points": undefined,
+                "subhead": null,
+                "type": "Header",
+                "url": undefined,
+              },
+              Object {
+                "__typename": "ContentfulRichTextContent",
+                "content": <RichTextConnector
+                  data={
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"This content is fits the container\\",\\"marks\\":[{\\"type\\":\\"bold\\"}],\\"data\\":{}},{\\"nodeType\\":\\"text\\",\\"value\\":\\" consectetur adipiscing elit. Integer eleifend risus ultricies  dignissim suscipit. Donec vel lacus.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                        "references": Array [],
+                      },
+                      "parentColorScheme": "transparent-light-text",
+                    }
+                  }
+                />,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "points": undefined,
+                "type": "Rich Text",
+                "url": undefined,
+              },
+            ],
+            "bottomLeftIsImage": false,
+            "bottomRightBackgroundColor": "trimble-blue",
+            "bottomRightContent": Array [
+              Object {
+                "__typename": "ContentfulHeader",
+                "content": null,
+                "eyebrow": null,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "headline": "2x2 Headline",
+                "points": undefined,
+                "subhead": null,
+                "type": "Header",
+                "url": undefined,
+              },
+              Object {
+                "__typename": "ContentfulRichTextContent",
+                "content": <RichTextConnector
+                  data={
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"This content is fits the container\\",\\"marks\\":[{\\"type\\":\\"bold\\"}],\\"data\\":{}},{\\"nodeType\\":\\"text\\",\\"value\\":\\" consectetur adipiscing elit. Integer eleifend risus ultricies  dignissim suscipit. Donec vel lacus.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                        "references": Array [],
+                      },
+                      "parentColorScheme": "transparent-light-text",
+                    }
+                  }
+                />,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "points": undefined,
+                "type": "Rich Text",
+                "url": undefined,
+              },
+            ],
+            "bottomRightIsImage": false,
+            "overlappingContent": false,
+            "shortDataPointContent": undefined,
+            "topLeftBackgroundColor": "trimble-blue",
+            "topLeftContent": Array [
+              Object {
+                "__typename": "ContentfulHeader",
+                "content": null,
+                "eyebrow": null,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "headline": "2x2 Headline",
+                "points": undefined,
+                "subhead": null,
+                "type": "Header",
+                "url": undefined,
+              },
+              Object {
+                "__typename": "ContentfulRichTextContent",
+                "content": <RichTextConnector
+                  data={
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"This content is fits the container\\",\\"marks\\":[{\\"type\\":\\"bold\\"}],\\"data\\":{}},{\\"nodeType\\":\\"text\\",\\"value\\":\\" consectetur adipiscing elit. Integer eleifend risus ultricies  dignissim suscipit. Donec vel lacus.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                        "references": Array [],
+                      },
+                      "parentColorScheme": "transparent-light-text",
+                    }
+                  }
+                />,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "points": undefined,
+                "type": "Rich Text",
+                "url": undefined,
+              },
+            ],
+            "topLeftIsImage": false,
+            "topRightBackgroundColor": "dark-navy",
+            "topRightContent": Array [
+              Object {
+                "__typename": "ContentfulHeader",
+                "content": null,
+                "eyebrow": null,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "headline": "2x2 Headline",
+                "points": undefined,
+                "subhead": null,
+                "type": "Header",
+                "url": undefined,
+              },
+              Object {
+                "__typename": "ContentfulRichTextContent",
+                "content": <RichTextConnector
+                  data={
+                    Object {
+                      "__typename": "ContentfulRichTextContent",
+                      "content": Object {
+                        "raw": "{\\"nodeType\\":\\"document\\",\\"data\\":{},\\"content\\":[{\\"nodeType\\":\\"paragraph\\",\\"content\\":[{\\"nodeType\\":\\"text\\",\\"value\\":\\"This content is fits the container\\",\\"marks\\":[{\\"type\\":\\"bold\\"}],\\"data\\":{}},{\\"nodeType\\":\\"text\\",\\"value\\":\\" consectetur adipiscing elit. Integer eleifend risus ultricies  dignissim suscipit. Donec vel lacus.\\",\\"marks\\":[],\\"data\\":{}}],\\"data\\":{}}]}",
+                        "references": Array [],
+                      },
+                      "parentColorScheme": "transparent-light-text",
+                    }
+                  }
+                />,
+                "focalPointImage": Object {
+                  "title": undefined,
+                  "url": undefined,
+                },
+                "points": undefined,
+                "type": "Rich Text",
+                "url": undefined,
+              },
+            ],
+            "topRightIsImage": false,
+          }
+        }
+      />
+    </div>
+  </section>
+</section>
+`;
