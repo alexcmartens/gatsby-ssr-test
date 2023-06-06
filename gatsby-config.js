@@ -22,5 +22,12 @@ module.exports = {
       "spaceId": process.env.CONTENTFUL_SPACE_ID,
       "environment": process.env.CONTENTFUL_BRANCH
     }
-  }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-postcss", "gatsby-plugin-netlify", "gatsby-plugin-sass"]
+  }, 
+  {
+    resolve: "gatsby-plugin-sass",
+    options: {
+      useResolveUrlLoader: true,
+    },
+  },  
+  "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-postcss", "gatsby-plugin-netlify"]
 };

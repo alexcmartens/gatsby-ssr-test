@@ -1,0 +1,185 @@
+@use "terra-one/dist/global-styles/global-vars.scss" as vars;
+@use "terra-one/dist/global-styles/global-colors.scss" as colors;
+@use "terra-one/dist/global-styles/global-terra.scss";
+
+.index {
+  &__loading-spinner {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);    
+  }
+}
+
+.luna-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 152px;
+  &--with-icons {
+    padding-top: 175px;
+  }
+  &--no-subnav {
+    padding-top: 105px;
+    &--with-icons {
+      padding-top: 130px;
+    }
+  }
+  &--no-nav {
+    padding-top: 0;
+  }
+  &--no-menu-nav {
+    padding-top: 49px;
+  }
+
+  @media screen and (max-width: 960px) {
+    padding-top: 108px;
+    &--with-icons {
+      padding-top: 133px;
+    }
+    &--no-subnav {
+      padding-top: 0;
+      &--with-icons {
+        padding-top: 59px;
+      }
+      .ter-navbar.ter-navbar--is-showing + .luna-layout__sections {
+        margin-top: 60px;
+      }
+    }
+  }
+
+  &__sections {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__navigation-padding {
+    padding: 0px calc((100% - 1280px) / 2);
+
+    @media screen and (max-width: vars.$breakpoint-md) {
+      padding: 0px;
+    }
+    &--blue {
+      background-color: colors.$trimble-blue;
+    }
+  }
+
+  .ter-hero-four {
+    width: 100%;
+  }
+  .ter-jump-nav a:active,
+  .ter-jump-nav a:focus {
+    color: colors.$white;
+  }
+
+  .ter-footer {
+    margin-top: auto;
+    min-width: 100%;
+
+    &__secondary-link {
+      padding-top: 12px;
+    }
+
+    &__logo {
+      picture {
+        img {
+          position: relative !important;
+        }
+      }
+    }
+  }
+
+  .ter-utility-nav {
+    a {
+      color: #ffffff;
+    }
+    a:hover {
+      cursor: pointer;
+      color: #005f9e;
+    }
+  }
+
+  .ter-navbar__fullscreen-dark-backer {
+    top: 0;
+  }
+
+  .luna-language-selector {
+    @media screen and (max-width: 900px) {
+      position: absolute;
+      top: 48px;
+      right: 0;
+      left: 0;
+    }
+  }
+
+  // The above ter-button styles are universal except for Hero7 - the above overrides what is in the Hero7 styles and styling fixes it
+  .ter-hero-7__button.ter-hero-7__button-2:hover,
+  .ter-hero-7__button.ter-hero-7__button-1:hover {
+    color: #ffffff;
+  }
+
+  // luna hover state in VariableContentCard will not work with gatsby-background-image. Adding styles here for a fix.
+  .luna-video-feat__thumbnail:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+
+  .ter-list-feat-five__content-container {
+    width: 1200px;
+
+    @media screen and (max-width: 1270px) {
+      width: auto;
+    }
+  }
+
+  .ter-footer {
+    a:visited:hover {
+      color: #fff;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .ter-feat-four {
+    &__sub-header {
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .ter-feat-seven {
+    .ter-tabs {
+      .ter-list-feat-main {
+        padding: 96px 0;
+      }
+    }
+  }
+
+  .remove-padding {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  sup {
+    font-family: "Open Sans", arial, sans-serif !important;
+  }
+
+  .lf-player-container {
+    height: 100%;
+  }
+}
+
+.ter-footer {
+  a:visited:hover,
+  a:active,
+  a:focus {
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+  }
+}

@@ -22,6 +22,7 @@ import { UniformContext } from "@uniformdev/context-react"
 import { createUniformContext } from "../lib/uniform/uniformContext"
 import { localize } from "@uniformdev/canvas"
 import { resolveRenderer } from "../compositions/connectors"
+import "../styles/boilerplate-styles.scss"
 
 function stringify(obj) {
   let cache = [];
