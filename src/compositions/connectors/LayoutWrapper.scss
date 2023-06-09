@@ -1,0 +1,1727 @@
+@use "~terra-one/dist/global-styles/global-vars.scss" as vars;
+@use "~terra-one/dist/global-styles/global-colors.scss" as colors;
+@use "~terra-one/dist/global-styles/mixins/typography.scss" as typography;
+//TODO: update colors to use Terra vars, waiting on TM-352
+//https://bitbucket.org/creativestrategy/terra-one-react/pull-requests/73#chg-src/global-styles/terra.scss
+
+//snippet from the PR
+
+// Numbered system
+
+$blue-14: #003054;
+$blue-10: #0063a3;
+$gray-1: #f1f1f6;
+$gray-10: #252a2e;
+// Labels
+
+$dark-navy: $blue-14;
+$trimble-blue: $blue-10;
+$trimble-dark-gray: $gray-10;
+$concrete-gray: $gray-1;
+$white: #ffffff;
+
+.video-modal-deployed {
+  .ter-navbar {
+    z-index: unset;
+  }
+
+  #video-modal {
+    z-index: 30;
+  }
+}
+
+.luna-super-hero__play-btn {
+  z-index: 1 !important;
+}
+
+.contentful-layout {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .default-layout__children {
+      .imageSection {
+        width: 100%;
+      }
+    }
+
+    &.has-bg-image {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .contentful-layout__item.has-bg-image {
+        .background-image {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          overflow: hidden;
+
+          &.image-full-width-left {
+            width: unset;
+            height: unset;
+            top: -60px;
+            bottom: -60px;
+            right: 0;
+            left: -50vw;
+
+            @media screen and (max-width: vars.$breakpoint-sm) {
+              top: 0;
+              bottom: 0;
+              left: -50vw;
+              right: -50vw;
+              height: 100%;
+            }
+          }
+
+          &.image-full-width-right {
+            width: unset;
+            height: unset;
+            top: -60px;
+            bottom: -60px;
+            right: -50vw;
+            left: 0;
+
+            @media screen and (max-width: vars.$breakpoint-sm) {
+              top: 0;
+              bottom: 0;
+              left: -50vw;
+              right: -50vw;
+              height: 100%;
+            }
+          }
+
+          picture {
+            position: relative;
+          }
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+
+      .contentful-layout__item--vertical.has-bg-image {
+        .background-image {
+          width: 100vw;
+          left: 50%;
+          right: 50%;
+          margin-left: -50vw;
+          margin-right: -50vw;
+
+          picture {
+            width: 100vw;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+          }
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xs) {
+        .cta-container.transparent-light-text {
+          color: $white;
+        }
+      }
+    }
+
+    .luna-accordion__content-wrapper {
+      .luna-accordion__item {
+        &:first-child {
+          padding-top: 0;
+        }
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__item {
+    line-height: 0;
+
+    &.bg-image-only {
+      height: 520px;
+
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        height: 210px;
+      }
+    }
+
+    &--inner-padding {
+      padding: 54px 0;
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        padding: vars.spacing("lg") 0;
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xs) {
+        padding: vars.spacing("sm") 0;
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xxs) {
+        padding: vars.spacing("xs") 0;
+      }
+    }
+
+    &--left {
+      grid-column-start: 1;
+
+      &--small {
+        grid-column-end: 6;
+
+        //layout is always vertical on tablet/mobile
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-end: 17;
+        }
+      }
+
+      &--medium {
+        grid-column-end: 8;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-end: 17;
+        }
+      }
+
+      &--large {
+        grid-column-end: 10;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-end: 17;
+        }
+      }
+
+      //Left items need bottom padding when in mobile view since they swap to a vertical layout
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        padding-bottom: vars.spacing("lg");
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xs) {
+        padding-bottom: vars.spacing("sm");
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xxs) {
+        padding-bottom: vars.spacing("xs");
+      }
+
+      .luna-super-hero__content-wrapper-variant_6-top {
+        margin: 0px;
+      }
+
+      .luna-super-hero-variant_6-top {
+        background: none;
+      }
+    }
+
+    &--far-left {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-start: 1;
+
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        grid-template-columns: repeat(16, 1fr);
+        grid-column: 1 / span 16 !important;
+      }
+
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        grid-row: 1 / span 1;
+      }
+
+      &--small {
+        padding: 54px 0;
+        display: grid;
+        grid-template-columns: repeat(32, 1fr);
+        grid-column-end: 7;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-template-columns: repeat(16, 1fr);
+        }
+
+        .content-section-left {
+          grid-column: 6 / span 24 !important;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 2 / span 14 !important;
+          }
+        }
+
+        .richtext-container,
+        .luna-accordion,
+        .cta-buttons-container,
+        .cta-container,
+        .ter-header,
+        .ter-icon-text-list,
+        .videoContainer,
+        .ter-focused-image-container,
+        .imageSection {
+          margin-left: 4px;
+          margin-bottom: 54px;
+          position: relative;
+          z-index: 1;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            margin-left: 0px;
+          }
+        }
+
+        .luna-link-list {
+          position: relative;
+          z-index: 1;
+        }
+
+        .imageSection {
+          height: auto;
+          width: 100%;
+        }
+
+        //layout is always vertical on tablet/mobile
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-end: 17;
+        }
+      }
+
+      &--medium {
+        grid-column-end: 9;
+        padding: 54px 0;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-end: 16;
+        }
+
+        .content-section-left {
+          grid-column: 2 / span 6 !important;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 2 / span 14 !important;
+          }
+        }
+
+        .richtext-container,
+        .luna-accordion,
+        .cta-buttons-container,
+        .cta-container,
+        .ter-header,
+        .ter-icon-text-list,
+        .videoContainer,
+        .ter-focused-image-container,
+        .imageSection {
+          position: relative;
+          margin-bottom: 54px;
+          z-index: 1;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            padding-left: 1px;
+          }
+        }
+
+        .luna-link-list {
+          position: relative;
+          z-index: 1;
+        }
+
+        .imageSection {
+          height: auto;
+          width: 100%;
+        }
+
+        .videoContainer {
+          margin-bottom: 32px;
+        }
+      }
+
+      &--large {
+        padding: 54px 0;
+        grid-column-end: 11;
+        display: grid;
+        grid-template-columns: repeat(32, 1fr);
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-template-columns: repeat(16, 1fr);
+        }
+
+        .content-section-left {
+          grid-column: 4 / span 28 !important;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 2 / span 14 !important;
+          }
+        }
+
+        .richtext-container,
+        .luna-accordion,
+        .cta-buttons-container,
+        .cta-container,
+        .ter-header,
+        .ter-icon-text-list,
+        .videoContainer,
+        .ter-focused-image-container,
+        .imageSection {
+          margin-left: 5px;
+          margin-bottom: 54px;
+          position: relative;
+          z-index: 1;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            margin-left: 0;
+          }
+        }
+
+        .luna-link-list {
+          position: relative;
+          z-index: 1;
+        }
+
+        .imageSection {
+          height: auto;
+          width: 100%;
+        }
+
+        .videoContainer {
+          margin-bottom: 32px;
+        }
+      }
+
+      //Left items need bottom padding when in mobile view since they swap to a vertical layout
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        padding-bottom: vars.spacing("lg");
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xs) {
+        padding-bottom: vars.spacing("sm");
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xxs) {
+        padding-bottom: vars.spacing("xs");
+      }
+
+      .luna-super-hero__content-wrapper-variant_6-top {
+        margin: 0px;
+      }
+
+      .luna-super-hero-variant_6-top {
+        background: none;
+      }
+    }
+
+    &--far-left-separate {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-column-start: 1;
+      z-index: 0;
+      
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        grid-template-columns: repeat(16, 1fr);
+      }
+
+      &--small {
+        padding: 54px 0;
+        grid-column-end: 7;
+        display: grid;
+        grid-template-columns: repeat(32, 1fr);
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-template-columns: repeat(16, 1fr);
+          grid-column: 1 / span 16;
+        }
+
+        .content-section-left {
+          grid-column: 6 / span 24 !important;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 2 / span 14 !important;
+          }
+        }
+
+        .richtext-container,
+        .luna-accordion,
+        .cta-buttons-container,
+        .cta-container,
+        .ter-header,
+        .ter-icon-text-list,
+        .videoContainer,
+        .ter-focused-image-container,
+        .imageSection {
+          margin-left: 6px;
+          margin-bottom: 54px;
+          position: relative;
+          z-index: 1;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            margin-left: 0;
+          }
+        }
+
+        .luna-link-list {
+          position: relative;
+          z-index: 1;
+        }
+
+        .imageSection {
+          height: auto;
+          width: 100%;
+        }
+
+        .videoContainer {
+          margin-bottom: 32px;
+        }
+
+        //layout is always vertical on tablet/mobile
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          &:not(:last-child) {
+            margin-bottom: 16px;
+            margin-right: 0;
+          }
+        }
+      }
+
+      &--medium {
+        padding: 54px 0;
+        grid-column-end: 9;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-template-columns: repeat(16, 1fr);
+          grid-column: 1 / span 16;
+        }
+
+        .content-section-left {
+          grid-column: 2 / span 6 !important;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 2 / span 14 !important;
+          }
+        }
+
+        .richtext-container,
+        .luna-accordion,
+        .cta-buttons-container,
+        .cta-container,
+        .ter-header,
+        .ter-icon-text-list,
+        .videoContainer,
+        .ter-focused-image-container,
+        .imageSection {
+          margin-bottom: 54px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .luna-link-list {
+          position: relative;
+          z-index: 1;
+        }
+
+        .imageSection {
+          height: auto;
+          width: 100%;
+        }
+
+        .videoContainer {
+          margin-bottom: 32px;
+        }
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      &--large {
+        padding: 54px 0;
+        display: grid;
+        grid-template-columns: repeat(32, 1fr);
+        margin-left: 6px;
+        grid-column-end: 11;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-template-columns: repeat(16, 1fr);
+          grid-column: 1 / span 16;
+          margin-left: 0;
+        }
+
+        .videoContainer {
+          margin-bottom: 32px;
+        }
+
+        .content-section-left {
+          grid-column: 4 / span 28 !important;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 2 / span 14 !important;
+          }
+        }
+
+        .richtext-container,
+        .luna-accordion,
+        .cta-buttons-container,
+        .cta-container,
+        .ter-header,
+        .ter-icon-text-list,
+        .videoContainer,
+        .ter-focused-image-container,
+        .imageSection {
+          margin-bottom: 54px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .luna-link-list {
+          position: relative;
+          z-index: 1;
+        }
+
+        .imageSection {
+          height: auto;
+          width: 100%;
+        }
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      //Left items need bottom padding when in mobile view since they swap to a vertical layout
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        padding-bottom: vars.spacing("lg");
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xs) {
+        padding-bottom: vars.spacing("sm");
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xxs) {
+        padding-bottom: vars.spacing("xs");
+      }
+
+      .luna-super-hero__content-wrapper-variant_6-top {
+        margin: 0px;
+      }
+
+      .luna-super-hero-variant_6-top {
+        background: none;
+      }
+    }
+
+    &--right {
+      grid-column-end: 17;
+
+      &--small {
+        grid-column-start: 12;
+
+        //layout is always vertical on tablet/mobile
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-start: 1;
+        }
+      }
+
+      &--medium {
+        grid-column-start: 10;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-start: 1;
+        }
+      }
+
+      &--large {
+        grid-column-start: 8;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-start: 1;
+        }
+      }
+
+      .luna-super-hero__content-wrapper-variant_6-top {
+        margin: 0px;
+      }
+
+      .luna-super-hero-variant_6-top {
+        background: none;
+      }
+    }
+
+    &--far-right {
+      grid-column-end: 17;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: 1fr;
+
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        grid-template-columns: repeat(16, 1fr);
+        grid-column: 1 / span 16 !important;
+      }
+
+      &--small {
+        padding: 54px 0;
+        grid-column-start: 11;
+        display: grid;
+        grid-template-columns: repeat(32, 1fr);
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-template-columns: repeat(16, 1fr);
+        }
+
+        .videoContainer {
+          margin-bottom: 32px;
+        }
+
+        .content-section-right {
+          grid-column: 6 / span 22 !important;
+          padding-right: 4px;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 2 / span 14 !important;
+            padding-right: 0px;
+          }
+        }
+
+        .richtext-container,
+        .luna-accordion,
+        .cta-buttons-container,
+        .cta-container,
+        .ter-header,
+        .ter-icon-text-list,
+        .videoContainer,
+        .ter-focused-image-container,
+        .imageSection {
+          position: relative;
+          z-index: 1;
+          margin-bottom: 54px;
+        }
+
+        .luna-link-list {
+          position: relative;
+          z-index: 1;
+        }
+
+        .imageSection {
+          height: auto;
+          width: 100%;
+        }
+
+        //layout is always vertical on tablet/mobile
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-start: 1;
+        }
+      }
+
+      &--medium {
+        padding: 54px 0;
+        grid-row: 1 / span 1;
+        grid-column-start: 9;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-row: 2 / span 1;
+        }
+
+        .content-section-right {
+          grid-column: 2 / span 6 !important;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 2 / span 14 !important;
+          }
+        }
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column: 1 / span 16;
+        }
+
+        .videoContainer {
+          margin-bottom: 32px;
+        }
+
+        .richtext-container,
+        .luna-accordion,
+        .cta-buttons-container,
+        .cta-container,
+        .ter-header,
+        .ter-icon-text-list,
+        .videoContainer,
+        .ter-focused-image-container,
+        .imageSection {
+          margin-bottom: 54px;
+          position: relative;
+          z-index: 1;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 2 / span 14;
+          }
+        }
+
+        .ter-icon-text-list__content-wrapper {
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 1 / span 16;
+          }
+        }
+
+        .luna-link-list {
+          position: relative;
+          z-index: 1;
+        }
+
+        .imageSection {
+          height: auto;
+          width: 100%;
+        }
+      }
+
+      &--large {
+        padding: 54px 0;
+
+        display: grid;
+        grid-template-columns: repeat(32, 1fr);
+        grid-column-start: 7;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-template-columns: repeat(16, 1fr);
+        }
+
+        .content-section-right {
+          grid-column: 4 / span 26 !important;
+          padding-right: 4px;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 2 / span 14 !important;
+            padding-right: 0;
+          }
+        }
+
+        .richtext-container,
+        .luna-accordion,
+        .cta-buttons-container,
+        .cta-container,
+        .ter-header,
+        .ter-icon-text-list,
+        .videoContainer,
+        .ter-focused-image-container,
+        .imageSection {
+          margin-bottom: 54px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .luna-link-list {
+          position: relative;
+          z-index: 1;
+        }
+
+        .imageSection {
+          height: auto;
+          width: 100%;
+        }
+
+        .videoContainer {
+          margin-bottom: 32px;
+        }
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-start: 1;
+        }
+      }
+
+      .luna-super-hero__content-wrapper-variant_6-top {
+        margin: 0px;
+      }
+
+      .luna-super-hero-variant_6-top {
+        background: none;
+      }
+    }
+
+    &--far-right-separate {
+      grid-column-end: 17;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      z-index: 0;
+
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        grid-template-columns: repeat(16, 1fr);
+        grid-column: 1 / span 16 !important;
+      }
+
+      &--small {
+        grid-column-start: 11;
+        padding: 54px 0;
+        display: grid;
+        grid-template-columns: repeat(32, 1fr);
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-template-columns: repeat(16, 1fr);
+        }
+
+        .videoContainer {
+          margin-bottom: 32px;
+        }
+
+        .content-section-right {
+          grid-column: 6 / span 22 !important;
+          padding-right: 4px;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 2 / span 14 !important;
+            padding-right: 0;
+          }
+        }
+
+        .richtext-container,
+        .luna-accordion,
+        .cta-buttons-container,
+        .cta-container,
+        .ter-header,
+        .ter-icon-text-list,
+        .videoContainer,
+        .ter-focused-image-container,
+        .imageSection {
+          margin-bottom: 54px;
+          position: relative;
+          z-index: 1;
+          margin-bottom: 54px;
+        }
+
+        .luna-link-list {
+          position: relative;
+          z-index: 1;
+        }
+
+        .imageSection {
+          height: auto;
+          width: 100%;
+        }
+
+        //layout is always vertical on tablet/mobile
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-start: 1;
+          &:not(:first-child) {
+            margin-top: 16px;
+            margin-left: 0;
+          }
+        }
+      }
+
+      &--medium {
+        grid-column-start: 9;
+        padding: 54px 0;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-start: 1;
+          grid-template-columns: repeat(16, 1fr);
+        }
+
+        .content-section-right {
+          grid-column: 2 / span 6 !important;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column-start: 1;
+            grid-column: 2 / span 14 !important;
+          }
+        }
+
+        .richtext-container,
+        .luna-accordion,
+        .cta-buttons-container,
+        .cta-container,
+        .ter-header,
+        .ter-icon-text-list,
+        .videoContainer,
+        .ter-focused-image-container,
+        .imageSection {
+          margin-bottom: 54px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .luna-link-list {
+          position: relative;
+          z-index: 1;
+        }
+
+        .imageSection {
+          height: auto;
+          width: 100%;
+        }
+
+        .videoContainer {
+          margin-bottom: 32px;
+        }
+      }
+
+      &--large {
+        padding: 54px 0;
+        display: grid;
+        grid-template-columns: repeat(32, 1fr);
+        grid-column-start: 7;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-template-columns: repeat(16, 1fr);
+        }
+
+        .content-section-right {
+          grid-column: 4 / span 28 !important;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            grid-column: 2 / span 14 !important;
+          }
+        }
+
+        .richtext-container,
+        .luna-accordion,
+        .cta-buttons-container,
+        .cta-container,
+        .ter-header,
+        .ter-icon-text-list,
+        .videoContainer,
+        .ter-focused-image-container,
+        .imageSection {
+          margin-bottom: 54px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .luna-link-list {
+          position: relative;
+          z-index: 1;
+        }
+
+        .imageSection {
+          height: auto;
+          width: 100%;
+        }
+
+        .videoContainer {
+          margin-bottom: 32px;
+        }
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-column-start: 1;
+          &:not(:first-child) {
+            margin-top: 16px;
+            margin-left: 0;
+          }
+        }
+      }
+
+      .luna-super-hero__content-wrapper-variant_6-top {
+        margin: 0px;
+      }
+
+      .luna-super-hero-variant_6-top {
+        background: none;
+      }
+    }
+
+    &--vertical {
+      padding: 54px 0;
+      display: grid;
+      grid-template-columns: repeat(16, 1fr);
+      grid-column-start: 1;
+      grid-column-end: 17;
+
+      & > *:last-child,
+      &:last-child {
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          margin-bottom: 0;
+        }
+      }
+
+      .videoContainer {
+        margin-bottom: 32px;
+      }
+
+      .content-section-left,
+      .content-section-right {
+        grid-column: 2 / span 14 !important;
+      }
+
+      .richtext-container,
+      .luna-accordion,
+      .cta-buttons-container,
+      .cta-container,
+      .ter-header,
+      .ter-icon-text-list,
+      .videoContainer,
+      .ter-focused-image-container,
+      .imageSection {
+        margin-bottom: 54px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .luna-link-list {
+        position: relative;
+        z-index: 1;
+      }
+
+      .imageSection {
+        height: auto;
+        width: 100%;
+      }
+
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        padding: 0 0 vars.spacing("lg") 0;
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xs) {
+        padding: 0 0 vars.spacing("sm") 0;
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xxs) {
+        padding: 0 0 vars.spacing("xs") 0;
+      }
+
+      .default-layout__grid {
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          margin: 0;
+        }
+      }
+
+      &--last {
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          padding: vars.spacing("lg") 0 0 0;
+        }
+
+        @media screen and (max-width: vars.$breakpoint-xs) {
+          padding: vars.spacing("sm") 0 0 0;
+        }
+
+        @media screen and (max-width: vars.$breakpoint-xxs) {
+          padding: vars.spacing("xs") 0 0 0;
+        }
+
+        .default-layout {
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            margin: 0;
+          }
+        }
+      }
+
+      .luna-super-hero__content-wrapper-variant_6-top {
+        margin: 0px;
+      }
+
+      .luna-super-hero-variant_6-top {
+        background: none;
+      }
+    }
+  }
+}
+
+.default-layout {
+  overflow: hidden;
+  margin-bottom: 54px;
+  width: 100%;
+  // additional "padding" only for screens 1280px and larger
+  padding: 0px calc((100% - 1280px) / 2);
+
+  // padding none at 1280px so padding can be the 1st and last grid column and nothing additional
+  @media screen and (max-width: vars.$breakpoint-sm) {
+    padding: 0;
+  }
+  &.nested {
+    @media screen and (min-width: vars.$breakpoint-sm) {
+      &:first-child {
+        .default-layout__grid {
+          padding-top: 0;
+        }
+      }
+    }
+    .default-layout__grid {
+      padding-bottom: 0;
+    }
+  }
+  &--no-vertical-margin {
+    margin: 0 !important;
+    &
+      + .default-layout:not(.default-layout--no-vertical-margin)
+      .ter-icon-mini-blocks {
+      margin-top: 54px;
+    }
+  }
+  &__grid {
+    margin: 54px 0;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+
+    @media screen and (max-width: vars.$breakpoint-sm) {
+      padding: vars.spacing("lg") 0;
+    }
+
+    @media screen and (max-width: vars.$breakpoint-xs) {
+      padding: vars.spacing("sm") 0;
+    }
+
+    @media screen and (max-width: vars.$breakpoint-xxs) {
+      padding: vars.spacing("xs") 0;
+    }
+    &--no-margin {
+      margin: 0;
+    }
+  }
+  &__children {
+    // leaves first and last column as "padding"
+    grid-column: 2 / span 14 !important;
+
+    &.space-top-bottom {
+      margin: 54px 0;
+
+      @media screen and (max-width: vars.$breakpoint-sm) {
+        padding: vars.spacing("lg") 0;
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xs) {
+        padding: vars.spacing("sm") 0;
+      }
+
+      @media screen and (max-width: vars.$breakpoint-xxs) {
+        padding: vars.spacing("xs") 0;
+      }
+    }
+  }
+  @media screen and (max-width: vars.$breakpoint-sm) {
+    &.superhero .luna-super-hero {
+      & > *:last-child,
+      & > .luna-super-hero__content-wrapper > *:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    &.blocklistitems > .default-layout__grid {
+      margin-bottom: 0;
+    }
+    &.twobytwo {
+      & > .default-layout__grid {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &:not(.no-vertical-margin):not(.grouped-component) {
+    margin-top: 54px;
+  }
+
+  &.no-vertical-margin {
+    margin-bottom: 0;
+
+    .contentful-layout__wrapper {
+      padding-bottom: 0 !important;
+    }
+
+    .contentful-layout__item {
+      .richtext-container,
+      .luna-accordion,
+      .cta-buttons-container,
+      .cta-container,
+      .ter-header,
+      .ter-icon-text-list,
+      .videoContainer,
+      .ter-focused-image-container,
+      .imageSection {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &.grouped-component {
+    .contentful-layout__item,
+    .contentful-layout__item:only-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .contentful-layout__wrapper {
+    overflow: hidden;
+
+    &.full-width {
+      overflow: visible;
+    }
+    .cta-container {
+      .header {
+        .eyebrow {
+          margin-bottom: 6px;
+        }
+        .heading {
+          margin-bottom: 12px;
+          line-height: 38px;
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            line-height: 32px;
+          }
+        }
+        .subheading {
+          font-family: typography.$regular-font-family;
+          line-height: 25px;
+        }
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  .nested {
+    overflow: visible;
+  }
+
+  .grid-container {
+    .contentful-layout__item {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        background-color: inherit;
+      }
+
+      &:first-child {
+        &:after {
+          top: -100vh;
+          bottom: -100vh;
+          left: -100vw;
+          right: 0;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            top: -100vh;
+            bottom: 0;
+            left: -100vw;
+            right: -100vw;
+          }
+        }
+      }
+
+      &:last-child {
+        &:after {
+          top: -100vh;
+          bottom: -100vh;
+          left: 0;
+          right: -100vw;
+
+          @media screen and (max-width: vars.$breakpoint-sm) {
+            top: 0;
+            bottom: -100vh;
+            left: -100vw;
+            right: -100vw;
+          }
+        }
+      }
+
+      &--vertical {
+        &:first-child {
+          &:after {
+            top: -100vh;
+            bottom: 0;
+            left: -100vw;
+            right: -100vw;
+          }
+        }
+
+        &:last-child {
+          &:after {
+            top: 0;
+            bottom: -100vh;
+            left: -100vw;
+            right: -100vw;
+          }
+        }
+      }
+    }
+  }
+
+  .ter-unbounded-card__image--with-modal .videoContainer {
+    z-index: auto;
+  }
+  .contentful-layout__wrapper .videoContainer.videoContainer--deployed {
+    z-index: 30;
+  }
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: auto;
+
+  .contentful-layout__item {
+    position: relative;
+
+    &--vertical,
+    &--vertical--last {
+      .default-layout__grid {
+        grid-template-columns: repeat(32, 1fr);
+
+        .default-layout__children {
+          grid-column: 2 / span 30 !important;
+        }
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          grid-template-columns: repeat(8, 1fr);
+
+          .default-layout__children {
+            grid-column: 2 / span 6 !important;
+          }
+        }
+
+        @media screen and (max-width: vars.$breakpoint-xs) {
+          grid-template-columns: repeat(16, 1fr);
+
+          .default-layout__children {
+            grid-column: 2 / span 14 !important;
+          }
+        }
+      }
+
+      .luna-accordion {
+        &__content-wrapper:last-child {
+          padding-bottom: 24px;
+        }
+      }
+    }
+
+    .background-image {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      &.image-full-width-left {
+        width: unset;
+        height: unset;
+        top: -60px;
+        bottom: -60px;
+        right: 0;
+        left: -50vw;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          top: 0;
+          bottom: 0;
+          left: -50vw;
+          right: -50vw;
+          height: 100%;
+        }
+      }
+
+      &.image-full-width-right {
+        width: unset;
+        height: unset;
+        top: -60px;
+        bottom: -60px;
+        right: -50vw;
+        left: 0;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+          top: 0;
+          bottom: 0;
+          left: -50vw;
+          right: -50vw;
+          height: 100%;
+        }
+      }
+    }
+
+    section {
+      * {
+        z-index: 2;
+      }
+    }
+  }
+}
+
+.dark-navy {
+  color: $white;
+
+  .richtext-container {
+    p {
+      font-weight: 400 !important;
+    }
+
+    a {
+      color: $white;
+      font-weight: 400;
+
+      &:hover {
+        color: $white !important;
+
+        &::before {
+          border-bottom: 2px solid colors.$dark-theme-link-list-underscore;
+        }
+      }
+    }
+  }
+
+  &:after {
+    background-color: $dark-navy !important;
+  }
+
+  .grid-container .contentful-layout__item:after {
+    background: $dark-navy;
+  }
+
+  &--alt {
+    .grid-container .contentful-layout__item:last-child:after {
+      background: $dark-navy;
+    }
+  }
+}
+
+.dark-navy + .default-layout:not(.dark-navy):not(.no-vertical-margin) {
+  margin-top: 54px;
+}
+
+.trimble-blue {
+  color: $white;
+
+  .richtext-container {
+    p {
+      font-weight: 400 !important;
+    }
+
+    a {
+      color: $white;
+      font-weight: 400;
+
+      &:hover {
+        color: $white !important;
+
+        &::before {
+          border-bottom: 2px solid colors.$dark-theme-link-list-underscore;
+        }
+      }
+    }
+  }
+
+  &:after {
+    background-color: $trimble-blue !important;
+  }
+
+  .grid-container .contentful-layout__item:after {
+    background: $trimble-blue;
+  }
+
+  &--alt {
+    .grid-container .contentful-layout__item:last-child:after {
+      background: $trimble-blue;
+    }
+  }
+}
+
+.trimble-dark-gray {
+  color: $white;
+
+  .richtext-container {
+    p {
+      font-weight: 400 !important;
+    }
+
+    a {
+      color: $white;
+      font-weight: 400;
+
+      &:hover {
+        color: $white !important;
+
+        &::before {
+          border-bottom: 2px solid colors.$dark-theme-link-list-underscore;
+        }
+      }
+    }
+  }
+
+  &:after {
+    background-color: $trimble-dark-gray !important;
+  }
+
+  .grid-container .contentful-layout__item:after {
+    background: $trimble-dark-gray;
+  }
+
+  &--alt {
+    .grid-container .contentful-layout__item:last-child:after {
+      background: $trimble-dark-gray;
+    }
+  }
+}
+
+.concrete-gray {
+  color: $trimble-dark-gray;
+
+  .richtext-container {
+    p {
+      font-weight: 400 !important;
+    }
+
+    a {
+      color: $trimble-dark-gray;
+      font-weight: 400;
+
+      &:hover {
+        color: $trimble-dark-gray !important;
+
+        &::before {
+          border-bottom: 2px solid $trimble-blue;
+        }
+      }
+    }
+  }
+
+  &:after {
+    background-color: $concrete-gray !important;
+  }
+
+  .grid-container .contentful-layout__item:after {
+    background: $concrete-gray;
+  }
+
+  &--alt {
+    .grid-container .contentful-layout__item:last-child:after {
+      background: $concrete-gray;
+    }
+  }
+}
+
+.white {
+  color: $trimble-dark-gray;
+
+  .richtext-container {
+    p {
+      font-weight: 400 !important;
+    }
+
+    a {
+      color: $trimble-dark-gray;
+      font-weight: 400;
+
+      &:hover {
+        color: $trimble-dark-gray !important;
+
+        &::before {
+          border-bottom: 2px solid $trimble-blue;
+        }
+      }
+    }
+  }
+
+  &:after {
+    background-color: $white !important;
+  }
+
+  .grid-container .contentful-layout__item:after {
+    background: $white;
+  }
+
+  &--alt {
+    .grid-container .contentful-layout__item:last-child:after {
+      background: $white;
+    }
+  }
+}
+
+.luna-full-background-hero--2x2 {
+  overflow: hidden;
+  .default-layout {
+    margin-bottom: 0;
+    .default-layout__grid {
+      margin: 0;
+    }
+  }
+  .luna-full-background-hero__content-wrapper-grid-variant-1 {
+    height: auto;
+  }
+}
+
+// Mobile Fixes - please review after Layout wrapper/padding changes go into Boilerplate
+
+@media screen and (max-width: vars.$breakpoint-sm) {
+  .luna-full-background-hero
+    .luna-full-background-hero__content-wrapper
+    .default-layout
+    .default-layout__grid {
+    margin: 0;
+  }
+  .luna-full-background-hero__content-wrapper-left--no-bottom-margin
+    .default-layout {
+    margin-bottom: 0;
+  }
+  .default-layout.no-vertical-margin .default-layout {
+    margin-bottom: 0;
+  }
+  .default-layout,
+  .default-layout__grid {
+    margin-top: 0;
+  }
+  .default-layout:not(.no-vertical-margin) {
+    .contentful-layout__item--vertical {
+      .cta-container {
+        padding-top: 48px;
+      }
+      &--last .content-section-left .cta-container {
+        margin-bottom: 54px;
+      }
+    }
+  }
+  .grid-container .contentful-layout__item:only-child {
+    padding-bottom: 48px;
+    padding-top: 48px;
+  }
+}
+
+.contentful-layout__item {
+  .cta-buttons--multiple {
+    .ter-button {
+      margin: 40px 32px 0 0 !important;
+    }
+  }
+  .cta-buttons {
+    .ter-button {
+      margin: 40px 0;
+    }
+  }
+}
+
+//HOTFIXES 12 Jan 23
+.super-hero-wrapper .default-layout {
+  margin-top: 0;
+}
+.super-hero-no-margin .default-layout {
+  margin-top: 0 !important;
+}
+
+.luna-layout__sections {
+  & > .default-layout:first-child {
+    margin-top: 0;
+  }
+  .grouped-component + .default-layout {
+    margin-top: 0;
+  }
+}
+
+.super-hero__wrapper > .default-layout:first-child {
+  margin-top: 0;
+}
+
+.luna-full-background-hero + .default-layout {
+  &.trimble-blue,
+  &.concrete-gray {
+    margin-top: 0;
+  }
+}
+
+.default-layout.concrete-gray + .default-layout.concrete-gray {
+  margin-top: 0;
+}

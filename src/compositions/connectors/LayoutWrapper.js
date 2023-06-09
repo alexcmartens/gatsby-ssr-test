@@ -9,6 +9,7 @@ import HeaderConnector from "./HeaderConnector"
 import CtaWithHeaderConnector from "./CtaWithHeaderConnector"
 import IconTextListConnector from "./IconTextListConnector"
 import flattenObject from "./utils/flattenObject"
+import "./LayoutWrapper.scss"
 
 const LayoutWrapper = props => {
   if (typeof props?.contentfulEntry?.fields === 'undefined') {
