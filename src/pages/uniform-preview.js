@@ -94,7 +94,7 @@ export async function getServerData(props) {
     projectId: process.env.GATSBY_UNIFORM_PROJECT_ID,
   })
   const { composition } = await client.getCompositionBySlug({
-    slug: "uniform-preview-page",
+    slug: "uniform-home-page",
   })
   console.log('composition --->', composition)
 
@@ -126,6 +126,7 @@ const PageComposition = props => {
   return (
     <UniformContext context={clientContext}>
       <Composition data={composition} resolveRenderer={resolveRenderer}>
+        <Slot name="header" />
         <Slot name="content" />
       </Composition>
     </UniformContext>
